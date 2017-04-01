@@ -1,5 +1,6 @@
 .m-form {
     border: 1px solid $color-border;
+    border-bottom: none;
     @include radius(6/$tr);
     .row {
         @include flexbox();
@@ -20,8 +21,5 @@
             height: 100%;
             border: 0;
         }
-    }
-    &:last-child{
-        border-bottom: 0;
     }
 }
