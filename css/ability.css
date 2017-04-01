@@ -77,14 +77,10 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 
 .g-btn { width: 12.5rem; height: 2.5rem; border: 0; background: #1fa7a4; color: #fff; text-align: center; font-size: 1rem; font-weight: bold; border-radius: 1.25rem; }
 
-.m-fund { margin: 2rem 1.6875rem; }
+.m-ability { margin: 1.25rem 2.1875rem; }
 
-.m-fund .tit { text-align: center; font-size: 1.25rem; color: #1fa7a4; font-weight: bold; }
+.m-ability .tit { margin-bottom: 1rem; text-align: center; font-size: 1.25rem; color: #1fa7a4; font-weight: bold; }
 
-.m-fund .intro { margin: 1.0625rem 0 1.3125rem; font-size: 0.875rem; line-height: 1.3125rem; }
+.m-ability .opt { margin-top: 1.25rem; text-align: center; }
 
-.m-fund .info { margin: 1.3125rem 0 1.4375rem; }
-
-.m-fund .info .p { margin-top: 0.5625rem; }
-
-.m-fund .opt { text-align: center; }
+.m-ability .mrg { margin-top: 1.25rem; }

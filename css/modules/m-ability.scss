@@ -1,0 +1,17 @@
+.m-ability {
+    margin: 40/$tr 70/$tr;
+    .tit {
+        margin-bottom: 32/$tr;
+        text-align: center;
+        font-size: 40/$tr;
+        color: $color-green;
+        font-weight: bold;
+    }
+    .opt {
+        margin-top: 40/$tr;
+        text-align: center;
+    }
+    .mrg {
+        margin-top: 40/$tr;
+    }
+}
