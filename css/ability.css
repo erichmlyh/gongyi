@@ -84,3 +84,7 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 .m-ability .opt { margin-top: 1.25rem; text-align: center; }
 
 .m-ability .mrg { margin-top: 1.25rem; }
+
+.m-ability .agree { margin-left: 0.3125rem; display: flex; }
+
+.m-ability .agree .ifo { margin-left: 0.375rem; flex: 1; font-size: 0.75rem; color: #b8bcc4; line-height: 1.25rem; }

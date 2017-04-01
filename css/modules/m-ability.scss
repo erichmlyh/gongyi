@@ -14,4 +14,15 @@
     .mrg {
         margin-top: 40/$tr;
     }
+    .agree {
+        margin-left: 10/$tr;
+        display: flex;
+        .ifo {
+            margin-left: 12/$tr;
+            flex: 1;
+            font-size: 24/$tr;
+            color: $color-gray1;
+            line-height: 40/$tr;
+        }
+    }
 }
