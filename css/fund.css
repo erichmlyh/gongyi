@@ -51,18 +51,28 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 
 .bold { font-weight: bold; }
 
-body { background: -webkit-linear-gradient(#aadffa, #ffffff, #ffffff); background: -o-linear-gradient(#aadffa, #ffffff, #ffffff); background: linear-gradient(#aadffa, #ffffff, #ffffff); }
+.m-form { border: 1px solid #e0e4ec; border-bottom: none; border-radius: 0.1875rem; }
 
-.index { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-flow: column nowrap; -ms-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; width: 23.4375rem; }
+.m-form .row { display: flex; height: 3rem; border-bottom: 1px solid #e0e4ec; }
 
-.index .title { width: 12.5rem; height: 5.0625rem; margin-top: 2.4375rem; }
+.m-form .row .label { width: 5.625rem; height: 100%; text-align: center; background-color: #ddd; border-right: 1px solid #9e9e9e; }
 
-.index .item { width: 10.25rem; height: 1.25rem; margin-top: 2.25rem; }
+.m-form .row .fill { flex: 1; }
 
-.index .zizhu { margin-top: 2.5625rem; }
+.m-form .row .ipt { width: 100%; height: 100%; border: 0; }
 
-.index .entry { width: 13rem; height: 2.5rem; border-radius: 1.25rem; margin-top: 1.125rem; background-color: #fff; box-shadow: 0 0.125rem 0.125rem rgba(80, 156, 154, 0.2); text-align: center; vertical-align: middle; font-size: 1.125rem; line-height: 1.25rem; padding: 0.625rem 0; color: #31383b; }
+.g-btn { width: 12.5rem; height: 2.5rem; border: 0; background: #1fa7a4; color: #fff; text-align: center; font-size: 1rem; font-weight: bold; border-radius: 1.25rem; }
 
-.index .dot { width: 20.4375rem; height: 0; border-bottom: 0.125rem dotted #d2eded; margin: 3.4375rem 0 1.6875rem 0; }
+.m-fund { margin: 2rem 1.6875rem; }
 
-.index .q-a { margin-bottom: 1.6875rem; font-size: 0.75rem; line-height: 1.25rem; color: #007f52; text-decoration: underline; }
+.m-fund .tit { text-align: center; font-size: 1.25rem; color: #1fa7a4; font-weight: bold; }
+
+.m-fund .intro { margin: 1.0625rem 0 1.3125rem; font-size: 0.875rem; line-height: 1.3125rem; }
+
+.m-fund .form { margin: 1.3125rem 0; }
+
+.m-fund .info { margin: 1.3125rem 0 1.4375rem; }
+
+.m-fund .info .p { margin-top: 0.5625rem; }
+
+.m-fund .opt { text-align: center; }

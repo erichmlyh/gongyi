@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>青益</title>
+    <script type="text/javascript">
+        (function () {
+            //获取屏幕大小
+            var html = document.documentElement;
+            document.addEventListener('DOMContentLoaded', function () {
+                resetRem();
+                resetScreen();
+            });
+            window.addEventListener('load', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            window.addEventListener('resize', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            function resetRem() {
+                html.style.fontSize = html.clientWidth * 16/ 375 + 'px';
+            }
+            function resetScreen() {
+                var height = html.clientHeight || window.innerHeight;
+                var width = html.clientWidth || window.innerWidth;
+                document.querySelector('body').style.height = height + 'px';
+                document.querySelector('body').style.width = width + 'px';
+            }
+            resetRem();
+        })();
+    </script>
+    <link rel="stylesheet" href="../css/qa.css">
+</head>
+<body>
+    <div class="m-qa">
+        <h3 class="tit">Q&A 青益计划问题解答</h3>
+        <ul class="cnt">
+            <li class="ques">
+                <div class="q">
+                    <label class="lab">1</label>
+                    <p class="ifo">报名了青益种子的初级阶段课程可以报名能力提升吗？ </p>
+                </div>
+                <p class="a">可以，但每个课程只能<span class="emp">各参与一次</span>。</p>
+            </li>
+            <li class="ques">
+                <div class="q">
+                    <label class="lab">2</label>
+                    <p class="ifo">报名了如果有事可以临时请假吗？</p>
+                </div>
+                <p class="a">报名提交后，会有<span class="emp">短信或私信告知</span>，如不能参与，提前3日回复，如未说明将影响后期各类培训报名成功几率。</p>
+            </li>
+            <li class="ques">
+                <div class="q">
+                    <label class="lab">2</label>
+                    <p class="ifo">培训相关费用及安排？</p>
+                </div>
+                <p class="a">训练营为期<span class="emp">2天2夜</span>，通常安排在某<span class="emp">周五下午5点集合至培训点周日下午4点结束返程</span>。培训期间的吃、住、行由基金会负责，个人有自行消费行为除外。培训期间服从安排，确保安全，不得无故请假或擅自离营。</p>
+            </li>
+            <li class="ques">
+                <div class="q">
+                    <label class="lab">2</label>
+                    <p class="ifo">参加完培训后我可以做什么？</p>
+                </div>
+                <p class="a"> 1. 获得<span class="emp">官方培训证书</span>；</p>
+                <p class="a"> 2. 优先参加基金会各类公益活动及培训；</p>
+                <p class="a"> 3. 可自组团队发起公益项目，优秀项目基金会将酌情给予支持。</p>
+            </li>
+        </ul>
+    </div>
+    <script src="../js/zepto.js"></script>
+</body>
+</html
