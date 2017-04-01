@@ -55,11 +55,13 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 
 .m-form .row { display: flex; height: 3rem; border-bottom: 1px solid #e0e4ec; }
 
-.m-form .row .label { width: 5.625rem; height: 100%; text-align: center; background-color: #ddd; border-right: 1px solid #9e9e9e; }
+.m-form .row .label { width: 5.625rem; height: 100%; text-align: center; background-color: #f9fafc; border-right: 1px solid #e0e4ec; color: #b8bcc4; font-size: 0.9375rem; line-height: 3rem; }
+
+.m-form .row .sf { font-size: 0.8125rem; }
 
 .m-form .row .fill { flex: 1; }
 
-.m-form .row .ipt { width: 100%; height: 100%; border: 0; }
+.m-form .row .ipt { width: 100%; height: 100%; border: 0; padding-left: 1.0625rem; outline: none; font-size: 0.9375rem; color: #31383b; }
 
 .g-btn { width: 12.5rem; height: 2.5rem; border: 0; background: #1fa7a4; color: #fff; text-align: center; font-size: 1rem; font-weight: bold; border-radius: 1.25rem; }
 
