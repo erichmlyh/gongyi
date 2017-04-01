@@ -4,7 +4,6 @@ $tr: $defaultRem*$ratio/1rem;
 
 html {
     font-size: 16px;
-    @extend body;
 }
 body {
     position: relative;
