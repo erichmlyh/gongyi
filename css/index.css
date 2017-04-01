@@ -10,7 +10,7 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 
 body { background: -webkit-linear-gradient(#aadffa, #ffffff, #ffffff); background: -o-linear-gradient(#aadffa, #ffffff, #ffffff); background: linear-gradient(#aadffa, #ffffff, #ffffff); }
 
-.index { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-flow: column nowrap; -ms-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; width: 23.4375rem; height: 20.4375rem; }
+.index { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-flow: column nowrap; -ms-flex-flow: column nowrap; flex-flow: column nowrap; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; width: 23.4375rem; }
 
 .index .title { width: 12.5rem; height: 5.0625rem; margin-top: 2.4375rem; }
 
