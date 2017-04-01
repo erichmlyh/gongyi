@@ -7,5 +7,5 @@
     text-align: center;
     font-size: 32/$tr;
     font-weight: bold;
-    @include radius(40/$tr);
+    border-radius: 40/$tr;
 }
