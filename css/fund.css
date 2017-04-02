@@ -83,7 +83,7 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 
 .g-select:-ms-expand { display: none; }
 
-.m-fund { margin: 2rem 1.6875rem; }
+.m-fund { margin: 1.625rem 1.6875rem 2rem; }
 
 .m-fund .tit { text-align: center; font-size: 1.25rem; color: #1fa7a4; font-weight: bold; }
 
