@@ -1,4 +1,4 @@
-.index {
+.entry {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -19,13 +19,13 @@
     .zizhu {
         margin-top: 82/$tr;
     }
-    .entry {
+    .entry-btn {
         width: 416/$tr;
         height: 80/$tr;
         border-radius: 40/$tr;
         margin-top: 36/$tr;
         background-color: #fff;
-        box-shadow: 0 4/$tr 4/$tr rgba(80,156,154,0.2);
+        box-shadow: 0 1px 1px rgba(80,156,154,0.2), 0 -1px 1px rgba(80,156,154,0.2), 1px 0 1px rgba(80,156,154,0.2), -1px 0 1px rgba(80,156,154,0.2);
 
         text-align: center;
         vertical-align: middle;

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>青益</title>
+    <script type="text/javascript">
+        (function () {
+            //获取屏幕大小
+            var html = document.documentElement;
+            document.addEventListener('DOMContentLoaded', function () {
+                resetRem();
+                resetScreen();
+            });
+            window.addEventListener('load', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            window.addEventListener('resize', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            function resetRem() {
+                html.style.fontSize = html.clientWidth * 16/ 375 + 'px';
+            }
+            function resetScreen() {
+                var height = html.clientHeight || window.innerHeight;
+                var width = html.clientWidth || window.innerWidth;
+                document.querySelector('body').style.width = width + 'px';
+            }
+            resetRem();
+        })();
+    </script>
+    <style>
+        .btn {
+            width: 12.5rem;
+            height: 2.5rem;
+            border: 0;
+            background: #1fa7a4;
+            color: #fff;
+            vertical-align: middle;
+            line-height: 2.5rem;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 1.25rem;
+            margin-top: 2rem;
+        }
+        .pages {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="pages">
+        <a href="ability.html" class="btn">报名-培训-能力提升</a>
+        <a href="course.html" class="btn">报名-培训-种子课程</a>
+        <a href="partner.html" class="btn">报名-资助-青益伙伴</a>
+        <a href="fund.html" class="btn">报名-资助-青益助力</a>
+        <a href="entry.html" class="btn">报名页入口</a>
+        <a href="increase.html" class="btn">课程介绍-能力提升</a>
+        <a href="qa.html" class="btn">Q&A</a>
+        <a href="ques.html" class="btn">调查问卷</a>
+        <a href="score.html" class="btn">积分-种子课程阶段</a>
+        <a href="junior.html" class="btn">课程介绍-初级</a>
+        <a href="share.html" class="btn">站外邀请页</a>
+    </div>
+    <script src="./js/zepto.js"></script>
+</body>
+</html>

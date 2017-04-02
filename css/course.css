@@ -51,7 +51,7 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 
 .g-select:-ms-expand { display: none; }
 
-.g-course .wrapper { position: relative; width: 19.3125rem; padding: 0 1.0625rem 1.0625rem 1.375rem; border: 0.03125rem solid #e0e4ec; border-radius: 0.1875rem; margin-top: 4.25rem; box-shadow: 0 0.25rem 0.25rem 0 rgba(80, 156, 154, 0.2); }
+.g-course .wrapper { position: relative; width: 19.3125rem; padding: 0 1.0625rem 1.0625rem 1.375rem; border: 1px solid #e0e4ec; border-radius: 0.1875rem; margin-top: 4.25rem; box-shadow: 0 0.25rem 0.25rem 0 rgba(80, 156, 154, 0.2); }
 
 .g-course .wrapper .img-wrapper { display: flex; flex-flow: row nowrap; justify-content: center; align-items: center; position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); width: 6.25rem; height: 6.25rem; background-color: #fff; }
 

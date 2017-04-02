@@ -51,16 +51,16 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 
 .g-select:-ms-expand { display: none; }
 
-.index { display: flex; flex-flow: column nowrap; justify-content: flex-start; align-items: center; width: 23.4375rem; background: linear-gradient(#aadffa, #ffffff, #ffffff); }
+.entry { display: flex; flex-flow: column nowrap; justify-content: flex-start; align-items: center; width: 23.4375rem; background: linear-gradient(#aadffa, #ffffff, #ffffff); }
 
-.index .title { width: 12.5rem; height: 5.0625rem; margin-top: 2.4375rem; }
+.entry .title { width: 12.5rem; height: 5.0625rem; margin-top: 2.4375rem; }
 
-.index .item { width: 10.25rem; height: 1.25rem; margin-top: 2.25rem; }
+.entry .item { width: 10.25rem; height: 1.25rem; margin-top: 2.25rem; }
 
-.index .zizhu { margin-top: 2.5625rem; }
+.entry .zizhu { margin-top: 2.5625rem; }
 
-.index .entry { width: 13rem; height: 2.5rem; border-radius: 1.25rem; margin-top: 1.125rem; background-color: #fff; box-shadow: 0 0.125rem 0.125rem rgba(80, 156, 154, 0.2); text-align: center; vertical-align: middle; font-size: 1.125rem; line-height: 2.5rem; color: #31383b; }
+.entry .entry-btn { width: 13rem; height: 2.5rem; border-radius: 1.25rem; margin-top: 1.125rem; background-color: #fff; box-shadow: 0 1px 1px rgba(80, 156, 154, 0.2), 0 -1px 1px rgba(80, 156, 154, 0.2), 1px 0 1px rgba(80, 156, 154, 0.2), -1px 0 1px rgba(80, 156, 154, 0.2); text-align: center; vertical-align: middle; font-size: 1.125rem; line-height: 2.5rem; color: #31383b; }
 
-.index .dot { width: 20.4375rem; height: 0; border-bottom: 0.125rem dotted #d2eded; margin: 3.4375rem 0 1.6875rem 0; }
+.entry .dot { width: 20.4375rem; height: 0; border-bottom: 0.125rem dotted #d2eded; margin: 3.4375rem 0 1.6875rem 0; }
 
-.index .q-a { margin-bottom: 1.6875rem; }
+.entry .q-a { margin-bottom: 1.6875rem; }

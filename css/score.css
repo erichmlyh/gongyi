@@ -63,7 +63,7 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 
 .score .score .score-num { color: #1fa7a4; font-weight: bold; }
 
-.score .score-rule { position: relative; width: 19.5625rem; padding: 0.8125rem 0.9375rem; border: 0.03125rem solid #e0e4ec; border-radius: 0.1875rem; margin-bottom: 1rem; }
+.score .score-rule { position: relative; width: 19.5625rem; padding: 0.8125rem 0.9375rem; border: 1px solid #e0e4ec; border-radius: 0.1875rem; margin-bottom: 1rem; }
 
 .score .score-rule .rule-title { position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); padding: 0 0.4375rem; color: #abb3bb; font-size: 0.9375rem; background-color: #fff; }
 
@@ -73,11 +73,11 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 
 .score .score-rule .words:last-child { margin-bottom: 0; }
 
-.score .socre-mine { margin: 0 0.9375rem; border: 0.03125rem solid #e0e4ec; border-radius: 0.1875rem; }
+.score .socre-mine { margin: 0 0.9375rem; border: 1px solid #e0e4ec; border-radius: 0.1875rem; }
 
 .score .socre-mine .score-title { background-color: #f9fafc; height: 2.1875rem; vertical-align: middle; text-align: center; line-height: 2.1875rem; }
 
-.score .socre-mine .row { display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center; height: 2.8125rem; padding: 0 0.9375rem; border-top: 0.03125rem solid #e0e4ec; }
+.score .socre-mine .row { display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center; height: 2.8125rem; padding: 0 0.9375rem; border-top: 1px solid #e0e4ec; }
 
 .score .socre-mine .row .left { color: #31383b; font-size: 0.875rem; }
 

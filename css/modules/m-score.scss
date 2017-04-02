@@ -43,7 +43,7 @@
         position: relative;
         width: 626/$tr;
         padding: 26/$tr 30/$tr;
-        border: 1/$tr solid #e0e4ec;
+        border: 1px solid #e0e4ec;
         border-radius: 6/$tr;
         margin-bottom: 32/$tr;
         .rule-title {
@@ -71,7 +71,7 @@
     }
     .socre-mine {
         margin: 0 30/$tr;
-        border: 1/$tr solid #e0e4ec;
+        border: 1px solid #e0e4ec;
         border-radius: 6/$tr;
         .score-title {
             background-color: #f9fafc;
@@ -87,7 +87,7 @@
             align-items: center;
             height: 90/$tr;
             padding: 0 30/$tr;
-            border-top: 1/$tr solid #e0e4ec;
+            border-top: 1px solid #e0e4ec;
             .left {
                 color: #31383b;
                 font-size: 28/$tr;
