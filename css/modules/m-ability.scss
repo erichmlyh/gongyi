@@ -1,5 +1,5 @@
 .m-ability {
-    margin: 40/$tr 70/$tr;
+    margin: 40/$tr 32/$tr;
     .tit {
         margin-bottom: 32/$tr;
         text-align: center;
@@ -20,9 +20,23 @@
         .ifo {
             margin-left: 12/$tr;
             flex: 1;
-            font-size: 24/$tr;
+            font-size: 26/$tr;
             color: $color-gray1;
             line-height: 40/$tr;
+        }
+        .check {
+            display: none;
+        }
+        .check + .icon {
+            width: 1.2rem;
+            height: 1.2rem;
+            background-size: cover;
+        }
+        .check +.icon {
+            background-image: url("../../qingyi/images/uncheck.png");
+        }
+        .check:checked + .icon {
+            background-image: url("../../qingyi/images/checked.png");
         }
     }
 }
