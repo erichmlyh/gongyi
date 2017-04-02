@@ -53,22 +53,34 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 
 .g-btn { width: 12.5rem; height: 2.5rem; border: 0; background: #1fa7a4; color: #fff; text-align: center; font-size: 1rem; font-weight: bold; border-radius: 1.25rem; }
 
-.g-ancher { font-size: 0.75rem; line-height: 1.25rem; color: #007f52; text-decoration: underline; }
+.m-ques { margin: 1.5rem 0 1.9375rem; }
 
-.share { display: flex; flex-flow: column nowrap; justify-content: flex-start; align-items: center; width: 23.4375rem; background: linear-gradient(#aadffa, #ffffff, #ffffff); }
+.m-ques .tit { text-align: center; font-size: 1.1875rem; color: #1fa7a4; font-weight: bold; }
 
-.share .top { width: 100%; height: 19.875rem; margin-bottom: 1.0625rem; }
+.m-ques .intro { margin: 0.8125rem 1.875rem 0; font-size: 0.875rem; line-height: 1.3125rem; }
 
-.share .words { font-size: 0.8125rem; color: #31383b; line-height: 1.375rem; }
+.m-ques .intro .name { margin-bottom: 0.25rem; }
 
-.share .words:last-child { margin-bottom: 0.6875rem; }
+.m-ques .judge { margin-top: 0.8125rem; padding: 0.9375rem 1.875rem 0.875rem; background-color: #f4f6f9; }
 
-.share .logo-words { color: #007f52; line-height: 1.375rem; font-size: 0.8125rem; font-weight: bold; font-style: italic; margin-bottom: 1.625rem; }
+.m-ques .judge .t { margin-bottom: 0.6875rem; text-align: center; font-size: 0.875rem; font-weight: bold; }
 
-.share .join { position: relative; margin-bottom: 0.375rem; }
+.m-ques .judge .ifo { display: flex; font-size: 0.75rem; color: #aeb4c1; }
 
-.share .join:before { content: ""; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 20.4375rem; height: 0; border-bottom: 0.125rem dotted #d2eded; }
+.m-ques .judge .ifo .itm { flex: 1; }
 
-.share .join .g-btn { position: relative; }
+.m-ques .course { margin: 1.1875rem 1rem 0; border: 1px solid #e0e4ec; border-radius: 0.1875rem; }
 
-.share .go-look { margin-bottom: 3.25rem; }
+.m-ques .course .t { border-bottom: 1px solid #e0e4ec; background-color: #f9fafc; text-align: center; line-height: 1.8125rem; font-size: 0.875rem; font-weight: bold; }
+
+.m-ques .course .cnt { padding: 0.8125rem 0.875rem; border-bottom: 1px solid rgba(224, 228, 236, 0.5); }
+
+.m-ques .course .cnt .ques { font-size: 0.875rem; line-height: 1.3125rem; }
+
+.m-ques .course .cnt .score { display: flex; margin-top: 0.5rem; font-size: 0.75rem; }
+
+.m-ques .course .cnt .score .s { flex: 1; }
+
+.m-ques .course .cnt:last-child { border-bottom: none; }
+
+.m-ques .opt { margin-top: 1.25rem; text-align: center; }
