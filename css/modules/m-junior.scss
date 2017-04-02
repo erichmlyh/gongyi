@@ -1,0 +1,21 @@
+.junior {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 750/$tr;
+    .introduction {
+        color: #31383b;
+        font-size: 40/$tr;
+        font-weight: bold;
+        margin-top: 52/$tr;
+    }
+    .peix {
+        color: #31383b;
+        font-size: 28/$tr;
+        margin-top: 18/$tr;
+    }
+    .btn {
+        margin: 66/$tr 0;
+    }
+}

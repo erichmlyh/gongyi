@@ -51,7 +51,7 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 
 .bold { font-weight: bold; }
 
-.g-btn { width: 12.5rem; height: 2.5rem; border: 0; background: #1fa7a4; color: #fff; text-align: center; font-size: 1rem; font-weight: bold; border-radius: 1.25rem; }
+.g-btn { width: 12.5rem; height: 2.5rem; border: 0; background: #1fa7a4; color: #fff; vertical-align: middle; line-height: 2.5rem; text-align: center; font-size: 1rem; font-weight: bold; border-radius: 1.25rem; }
 
 .g-ancher { font-size: 0.75rem; line-height: 1.25rem; color: #007f52; text-decoration: underline; }
 
