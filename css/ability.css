@@ -93,12 +93,10 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 
 .m-ability .agree { margin-left: 0.3125rem; display: flex; }
 
-.m-ability .agree .ifo { margin-left: 0.375rem; flex: 1; font-size: 0.8125rem; color: #b8bcc4; line-height: 1.25rem; }
+.m-ability .agree .ifo { display: flex; flex-flow: row nowrap; justify-content: flex-start; align-items: flex-start; flex: 1; font-size: 0.8125rem; color: #b8bcc4; line-height: 1.25rem; }
+
+.m-ability .agree .ifo:before { content: ""; display: block; margin-right: 0.375rem; flex: 0 0 auto; width: 1.2rem; height: 1.2rem; background-size: cover; background-image: url("../../qingyi/images/uncheck.png"); }
 
 .m-ability .agree .check { display: none; }
 
-.m-ability .agree .check + .icon { width: 1.2rem; height: 1.2rem; background-size: cover; }
-
-.m-ability .agree .check + .icon { background-image: url("../../qingyi/images/uncheck.png"); }
-
-.m-ability .agree .check:checked + .icon { background-image: url("../../qingyi/images/checked.png"); }
+.m-ability .agree .check:checked + .ifo:before { background-image: url("../../qingyi/images/checked.png"); }
