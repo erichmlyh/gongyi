@@ -71,9 +71,7 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 
 .m-ques .judge .t { margin-bottom: 0.6875rem; text-align: center; font-size: 0.875rem; font-weight: bold; }
 
-.m-ques .judge .ifo { display: flex; font-size: 0.75rem; color: #aeb4c1; }
-
-.m-ques .judge .ifo .itm { flex: 1; }
+.m-ques .judge .ifo { display: flex; justify-content: space-between; font-size: 0.75rem; color: #aeb4c1; }
 
 .m-ques .course { margin: 1.1875rem 1rem 0; border: 1px solid #e0e4ec; border-radius: 0.1875rem; }
 
@@ -87,7 +85,7 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 
 .m-ques .course .cnt .score .s { flex: 1; }
 
-.m-ques .course .cnt .score .s span { padding-left: 0.4375rem; }
+.m-ques .course .cnt .score .s span:before { margin-right: 0.4375rem; }
 
 .m-ques .course .cnt:last-child { border-bottom: none; }
 
@@ -98,6 +96,8 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 .m-ques .sel .ans { display: flex; flex-direction: column; }
 
 .m-ques .sel .ans .a { margin-top: 0.6875rem; }
+
+.m-ques .sel .ans .a span:before { margin-right: 0.6875rem; }
 
 .m-ques .wt { margin-top: 1.375rem; font-size: 0.875rem; }
 
@@ -110,3 +110,11 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 .m-ques .opt { margin-top: 1.125rem; text-align: center; }
 
 .m-ques .opt .wish { margin-bottom: 1.3125rem; font-size: 0.875rem; font-style: italic; }
+
+.m-ques label input[type="radio"] { display: none; }
+
+.m-ques label span { display: flex; justify-content: flex-start; align-items: center; }
+
+.m-ques label span:before { content: ""; display: block; flex: 0 0 auto; width: 1rem; height: 1rem; background-size: cover; background-image: url("../../qingyi/images/unradio.png"); }
+
+.m-ques label input[type="radio"]:checked + span:before { background-image: url("../../qingyi/images/radioed.png"); }

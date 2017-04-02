@@ -26,11 +26,9 @@
         }
         .ifo {
             display: flex;
+            justify-content: space-between;
             font-size: 24/$tr;
             color: $color-gray3;
-            .itm {
-                flex: 1;
-            }
         }
     }
     .course {
@@ -58,8 +56,8 @@
                 font-size: 24/$tr;
                 .s {
                     flex: 1;
-                    span {
-                        padding-left: 14/$tr;
+                    span:before {
+                        margin-right: 14/$tr;
                     }
                 }
             }
@@ -84,6 +82,9 @@
             flex-direction: column;
             .a {
                 margin-top: 22/$tr;
+                span:before {
+                    margin-right: 22/$tr;
+                }
             }
         }
     }
@@ -114,6 +115,28 @@
             margin-bottom: 42/$tr;    
             font-size: 28/$tr;
             font-style: italic;
+        }
+    }
+    label {
+        input[type="radio"] {
+            display: none;
+        }
+        span {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        span:before {
+            content: "";
+            display: block;
+            flex: 0 0 auto;
+            width: 1rem;
+            height: 1rem;
+            background-size: cover;
+            background-image: url("../../qingyi/images/unradio.png");
+        }
+        input[type="radio"]:checked + span:before {
+            background-image: url("../../qingyi/images/radioed.png");
         }
     }
 }
