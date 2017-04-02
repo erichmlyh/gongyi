@@ -42,7 +42,7 @@
                 <div class="row">
                     <p class="label">姓名</p>
                     <div class="fill">
-                        <input class="ipt" type="text" name="">
+                        <input class="ipt" type="text" name="name" data-reg="require" data-msg="请输入姓名">
                     </div>
                 </div>
                 <div class="row">
@@ -57,7 +57,7 @@
                 <div class="row">
                     <p class="label sf">身份证号</p>
                     <div class="fill">
-                        <input class="ipt" type="text" name="">
+                        <input class="ipt" type="text" name="cardnumber" data-reg="identity" data-msg="输入的身份证号有误">
                     </div>
                 </div>
                 <div class="row">
@@ -75,7 +75,7 @@
                 <div class="row">
                     <p class="label">E-mail</p>
                     <div class="fill">
-                        <input class="ipt" type="text">
+                        <input class="ipt" type="text" name="email" data-reg="email" data-msg="输入的邮箱有误">
                     </div>
                 </div>
                  <div class="row">
@@ -134,5 +134,6 @@
         </form>
     </div>
     <script src="./js/zepto.js"></script>
+    <script src="./js/validate.js"></script>
 </body>
 </html>
