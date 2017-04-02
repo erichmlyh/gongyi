@@ -107,6 +107,6 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 
 .m-ques label span { display: flex; justify-content: flex-start; align-items: center; }
 
-.m-ques label span:before { content: ""; display: block; flex: 0 0 auto; width: 1rem; height: 1rem; background-size: cover; background-image: url("../../qingyi/images/unradio.png"); }
+.m-ques label span:before { content: ""; display: block; flex: 0 0 auto; width: 1rem; height: 1rem; background-size: 100%; background-repeat: no-repeat; background-image: url("../../qingyi/images/unradio.png"); }
 
 .m-ques label input[type="radio"]:checked + span:before { background-image: url("../../qingyi/images/radioed.png"); }

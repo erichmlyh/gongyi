@@ -132,7 +132,8 @@
             flex: 0 0 auto;
             width: 1rem;
             height: 1rem;
-            background-size: cover;
+            background-size: 100%;
+            background-repeat: no-repeat;
             background-image: url("../../qingyi/images/unradio.png");
         }
         input[type="radio"]:checked + span:before {
