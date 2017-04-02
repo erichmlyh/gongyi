@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>青益</title>
+    <script type="text/javascript">
+        (function () {
+            //获取屏幕大小
+            var html = document.documentElement;
+            document.addEventListener('DOMContentLoaded', function () {
+                resetRem();
+                resetScreen();
+            });
+            window.addEventListener('load', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            window.addEventListener('resize', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            function resetRem() {
+                html.style.fontSize = html.clientWidth * 16/ 375 + 'px';
+            }
+            function resetScreen() {
+                var height = html.clientHeight || window.innerHeight;
+                var width = html.clientWidth || window.innerWidth;
+                document.querySelector('body').style.height = height + 'px';
+                document.querySelector('body').style.width = width + 'px';
+            }
+            resetRem();
+        })();
+    </script>
+    <link rel="stylesheet" href="./css/course.css">
+</head>
+<body>
+    <section class="junior">
+        <p class="introduction">课程及导师简介</p>
+        <p class="peix">能力提升工作坊</p>
+        <ul class="container g-course">
+            <li class="wrapper">
+                <div class="img-wrapper">
+                    <img class="portrait" src="./images/increase-1.png">
+                </div>
+                <p class="course-title title">课程一 : 拓展培训</p>
+                <p class="course-content content">团队领导力提升，发掘并培养优秀团队领袖。</p>
+                <p class="tutor title">导师 - 高静</p>
+                <p class="tutor-content content">2012年毕业于南京邮电大学社会工作，中级社工师，南京市惠仁社会工作服务中心儿童与家庭服务部主任，同时兼任凤凰社区睦邻中心主任。服务期间取得家庭正向教养导师、困境儿童评估员、绘画疗法初级导师资格证。近5年一直从事儿童成长教育、家长课堂、亲子关系、儿童特殊个案等领域的探索和服务。</p>
+            </li>
+            <li class="wrapper">
+                <div class="img-wrapper">
+                    <img class="portrait" src="./images/increase-2.png">
+                </div>
+                <p class="course-title title">课程二 : 六顶思考的帽子</p>
+                <p class="course-content content">六顶思考帽子的思维训练模式改变思维方式，跳出传统公益圈，创新公益服务方式。</p>
+                <p class="tutor title">导师 - 周长青</p>
+                <p class="tutor-content content">2001年毕业于南京师范大学。现任南京邮电大学人文学院社会工作系专业教师，兼任南京同仁社工事务所总干事助理，江苏省社会心理学会生涯教育专业委员会委员，从事学校和社区社会工作专业的教学、研究及相关社会服务。</p>
+            </li>
+            <li class="wrapper">
+                <div class="img-wrapper">
+                    <img class="portrait" src="./images/increase-3.png">
+                </div>
+                <p class="course-title title">课程三 : 公众表达（公益TTT）</p>
+                <p class="course-content content">将企业管理培训的TTT技巧融合到公益中，学会自带势能富有感染力的公众表达。</p>
+                <p class="tutor title">导师 - 张健</p>
+                <p class="tutor-content content">北京市京师（南京）律师事务所高级合伙人，南京市律师协会公司与证券专业委员会委员，曾在大型国企从事管理工作十多年，专注于能源环保领域的法律研究和法律实践，为多家化工企业法律顾问，曾为企业重组、并购提供法律服务。多年关注公益和慈善事业，为基金会、民非机构、社会团体的设立、文件起草、内部治理等提供法律咨询和帮助。</p>
+            </li>
+            <li class="wrapper">
+                <div class="img-wrapper">
+                    <img class="portrait" src="./images/increase-4.png">
+                </div>
+                <p class="course-title title">课程四 : 公益项目设计开发</p>
+                <p class="course-content content">了解公益项目，提升开发设计、管理项目能力，模拟项目书写作。</p>
+                <p class="tutor title">导师 - 崔效辉</p>
+                <p class="tutor-content content">2007年在澳大利亚福林德斯大学和阿德莱德大学（Adelaide University）做访问学者。现为南京邮电大学人口管理干部学院社会工作系副教授，社会工作教研室主任。任南京市同仁社工事务所总干事、南京柯菲平公益基金会理事等等。先后参与督导执行的项目：“彩虹桥.幸福路----浦口区贫困单身母亲就业改善项目”，获第二届中国公益慈善项目创意类项目铜奖，同年荣获南京市浦口区政府购买服务优秀奖。指导的“不老爱情“项目公益短片”获第九届（中国-深圳）慈善公益广告大赛影视类“最佳新人奖”。 </p>
+            </li>
+        </ul>
+        <a href="#" class="g-btn btn">进入阶段积分</a>
+    </section>
+    <script src="./js/zepto.js"></script>
+</body>
+</html>
