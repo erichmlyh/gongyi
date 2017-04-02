@@ -103,6 +103,8 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 
 .m-ques .wt .fill { height: 3.75rem; margin: 0.625rem 1.25rem 0; border: 1px solid #e0e4ec; padding: 0.625rem; }
 
-.m-ques .wt .fill .area { height: 100%; width: 100%; line-height: 1.3125rem; }
+.m-ques .wt .fill .area { height: 100%; width: 100%; line-height: 1.3125rem; outline: none; resize: none; }
 
-.m-ques .opt { margin-top: 1.25rem; text-align: center; }
+.m-ques .opt { margin-top: 1.125rem; text-align: center; }
+
+.m-ques .opt .wish { margin-bottom: 1.3125rem; font-size: 0.875rem; font-style: italic; }

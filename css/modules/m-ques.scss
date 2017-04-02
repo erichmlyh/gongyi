@@ -99,11 +99,18 @@
                 height: 100%;
                 width: 100%;
                 line-height: 42/$tr;
+                outline: none;
+                resize: none;
             }
         }
     }
     .opt {
-        margin-top: 40/$tr;
+        margin-top: 36/$tr;
         text-align: center;
+        .wish {
+            margin-bottom: 42/$tr;    
+            font-size: 28/$tr;
+            font-style: italic;
+        }
     }
 }
