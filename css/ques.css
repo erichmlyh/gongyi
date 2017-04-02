@@ -53,6 +53,12 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 
 .g-btn { width: 12.5rem; height: 2.5rem; border: 0; background: #1fa7a4; color: #fff; text-align: center; font-size: 1rem; font-weight: bold; border-radius: 1.25rem; }
 
+.g-ancher { font-size: 0.75rem; line-height: 1.25rem; color: #007f52; text-decoration: underline; }
+
+.select-self { /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/ border: none; /*很关键：将默认的select选择框样式清除*/ appearance: none; -moz-appearance: none; -webkit-appearance: none; /*在选择框的最右侧中间显示小箭头图片*/ background: url("../images/arrowdown.png") no-repeat scroll right center transparent; background-size: 0.9rem 0.9rem; /*为下拉小箭头留出一点位置，避免被文字覆盖*/ vertical-align: middle; padding-right: 0.9rem; border-right: 0.8rem solid transparent; /*清除ie的默认选择框样式清除，隐藏下拉箭头*/ }
+
+.select-self:-ms-expand { display: none; }
+
 .m-ques { margin: 1.5rem 0 1.9375rem; }
 
 .m-ques .tit { text-align: center; font-size: 1.1875rem; color: #1fa7a4; font-weight: bold; }
@@ -82,5 +88,21 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 .m-ques .course .cnt .score .s { flex: 1; }
 
 .m-ques .course .cnt:last-child { border-bottom: none; }
+
+.m-ques .esti { margin: 1.5rem 0 1.125rem; background-color: #f4f6f9; text-align: center; font-size: 0.875rem; line-height: 2.625rem; font-weight: bold; }
+
+.m-ques .sel { margin: 0 0 1.25rem 1.875rem; font-size: 0.875rem; }
+
+.m-ques .sel .ans { display: flex; flex-direction: column; }
+
+.m-ques .sel .ans .a { margin-top: 0.6875rem; }
+
+.m-ques .wt { margin-top: 1.375rem; font-size: 0.875rem; }
+
+.m-ques .wt .t { margin-left: 1.875rem; }
+
+.m-ques .wt .fill { height: 3.75rem; margin: 0.625rem 1.25rem 0; border: 1px solid #e0e4ec; padding: 0.625rem; }
+
+.m-ques .wt .fill .area { height: 100%; width: 100%; line-height: 1.3125rem; }
 
 .m-ques .opt { margin-top: 1.25rem; text-align: center; }
