@@ -3,6 +3,8 @@
     border-radius: 6/$tr;
     .row {
         display: flex;
+        justify-content: row nowrap;
+        align-items: center;
         height: 96/$tr;
         border-bottom: 1px solid $color-border;
         &:last-child {
