@@ -58,6 +58,9 @@
                 font-size: 24/$tr;
                 .s {
                     flex: 1;
+                    span {
+                        padding-left: 14/$tr;
+                    }
                 }
             }
             &:last-child {
