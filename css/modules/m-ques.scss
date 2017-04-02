@@ -1,0 +1,116 @@
+.m-ques {
+    margin: 48/$tr 0 62/$tr;
+    .tit {
+        text-align: center;
+        font-size: 38/$tr;
+        color: $color-green;
+        font-weight: bold;
+    }
+    .intro {
+        margin: 26/$tr 60/$tr 0;
+        font-size: 28/$tr;
+        line-height: 42/$tr;
+        .name {
+            margin-bottom: 8/$tr;
+        }
+    }
+    .judge {
+        margin-top: 26/$tr;
+        padding: 30/$tr 60/$tr 28/$tr;
+        background-color: $color-gray2;
+        .t {
+            margin-bottom: 22/$tr;
+            text-align: center;
+            font-size: 28/$tr;
+            font-weight: bold;
+        }
+        .ifo {
+            display: flex;
+            font-size: 24/$tr;
+            color: $color-gray3;
+            .itm {
+                flex: 1;
+            }
+        }
+    }
+    .course {
+        margin: 38/$tr 32/$tr 0;
+        border: 1px solid $color-border;
+        border-radius: 6/$tr;
+        .t {
+            border-bottom: 1px solid $color-border;
+            background-color: $color-gray;
+            text-align: center;
+            line-height: 58/$tr;
+            font-size: 28/$tr;
+            font-weight: bold;
+        }
+        .cnt {
+            padding: 26/$tr 28/$tr;
+            border-bottom: 1px solid rgba(224, 228, 236, 0.5);
+            .ques {
+                font-size: 28/$tr;
+                line-height: 42/$tr;
+            }
+            .score {
+                display: flex;
+                margin-top: 16/$tr;
+                font-size: 24/$tr;
+                .s {
+                    flex: 1;
+                }
+            }
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+    .esti {
+        margin: 48/$tr 0 36/$tr;
+        background-color: $color-gray2;
+        text-align: center;
+        font-size: 28/$tr;
+        line-height: 84/$tr;
+        font-weight: bold;
+    }
+    .sel {
+        margin: 0 0 40/$tr 60/$tr;
+        font-size: 28/$tr;
+        .ans {
+            display: flex;
+            flex-direction: column;
+            .a {
+                margin-top: 22/$tr;
+            }
+        }
+    }
+    .wt {
+        margin-top: 44/$tr;
+        font-size: 28/$tr;
+        .t {
+            margin-left: 60/$tr;
+        }
+        .fill {
+            height: 120/$tr;
+            margin: 20/$tr 40/$tr 0;
+            border: 1px solid $color-border;
+            padding: 20/$tr;
+            .area {
+                height: 100%;
+                width: 100%;
+                line-height: 42/$tr;
+                outline: none;
+                resize: none;
+            }
+        }
+    }
+    .opt {
+        margin-top: 36/$tr;
+        text-align: center;
+        .wish {
+            margin-bottom: 42/$tr;    
+            font-size: 28/$tr;
+            font-style: italic;
+        }
+    }
+}

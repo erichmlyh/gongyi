@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>调查问卷</title>
+    <script type="text/javascript">
+        (function () {
+            //获取屏幕大小
+            var html = document.documentElement;
+            document.addEventListener('DOMContentLoaded', function () {
+                resetRem();
+                resetScreen();
+            });
+            window.addEventListener('load', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            window.addEventListener('resize', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            function resetRem() {
+                html.style.fontSize = html.clientWidth * 16/ 375 + 'px';
+            }
+            function resetScreen() {
+                var height = html.clientHeight || window.innerHeight;
+                var width = html.clientWidth || window.innerWidth;
+                document.querySelector('body').style.height = height + 'px';
+                document.querySelector('body').style.width = width + 'px';
+            }
+            resetRem();
+        })();
+    </script>
+    <link rel="stylesheet" href="./css/ques.css">
+</head>
+<body>
+    <div class="m-ques">
+        <h3 class="tit">青益种子初级培训效果评估</h3>
+        <div class="intro">
+            <p class="name">亲爱的学员：</p>
+            <p>青益种子是青益伙伴计划重要的组成部分。首先非常感谢您的参与青益种子培训，也恭喜顺利完成工作坊的学习课程！非常希望能得到您的宝贵意见以改善讲师培训效果和培训组织工作，请您根据客观情况填好下表，谢谢您的合作与支持！</p>
+        </div>
+        <form action="#">
+            <div class="judge">
+                <h4 class="t">请对以下培训主题培训效果进行总体评价</h4>
+                <div class="ifo">
+                    <p class="itm">10分 - 非常满意</p>
+                    <p class="itm">8分 - 比较满意</p>
+                    <p class="itm">6分 - 一般</p>
+                </div>
+                <div class="ifo">
+                    <p class="itm">4分 - 比较不满意</p>
+                    <p class="itm">2分 - 非常不满意</p>
+                    <p class="itm"></p>
+                </div>
+            </div>
+            <div class="course">
+                <h4 class="t">课程一：你好，公益</h4>
+                <div class="cnt">
+                    <p class="ques">课程内容评估：内容是否需要，编排是否合理</p>
+                    <div class="score">
+                       <p class="s"><label><input type="radio" name="ques1">10分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">8分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">6分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">4分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">2分</label></p>
+                    </div>
+                </div>
+                <div class="cnt">
+                    <p class="ques">授课方式评估：授课方式是否有吸引力，易于接受</p>
+                    <div class="score">
+                       <p class="s"><label><input type="radio" name="ques1">10分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">8分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">6分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">4分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">2分</label></p>
+                    </div>
+                </div>
+                <div class="cnt">
+                    <p class="ques">课程效果评估：课程目标是否达到，您对该课程接受度如何</p>
+                    <div class="score">
+                       <p class="s"><label><input type="radio" name="ques1">10分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">8分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">6分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">4分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">2分</label></p>
+                    </div>
+                </div>
+            </div>
+            <div class="course">
+                <h4 class="t">课程二：金陵公益大观园</h4>
+                <div class="cnt">
+                    <p class="ques">课程内容评估：内容是否需要，编排是否合理</p>
+                    <div class="score">
+                       <p class="s"><label><input type="radio" name="ques1">10分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">8分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">6分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">4分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">2分</label></p>
+                    </div>
+                </div>
+                <div class="cnt">
+                    <p class="ques">授课方式评估：授课方式是否有吸引力，易于接受</p>
+                    <div class="score">
+                       <p class="s"><label><input type="radio" name="ques1">10分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">8分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">6分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">4分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">2分</label></p>
+                    </div>
+                </div>
+                <div class="cnt">
+                    <p class="ques">课程效果评估：课程目标是否达到，您对该课程接受度如何</p>
+                    <div class="score">
+                       <p class="s"><label><input type="radio" name="ques1">10分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">8分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">6分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">4分</label></p>
+                       <p class="s"><label><input type="radio" name="ques1">2分</label></p>
+                    </div>
+                </div>
+            </div>
+            <div class="esti">
+                <h4>课程及培训组织满意度调查，请客观评价</h4>
+            </div>
+            <div class="sel">
+                <p>1．您认为培训时间安排如何？</p>
+                <div class="ans">
+                    <p class="a"><label><input type="radio">A．时间合理/长短适中</label></p>
+                    <p class="a"><label><input type="radio">B．较为合理</label></p>
+                    <p class="a"><label><input type="radio">C．需要调整</label></p>
+                </div>
+            </div>
+            <div class="sel">
+                <p>2．你认为总体培训氛围效果如何？</p>
+                <div class="ans">
+                    <p class="a"><label><input type="radio">A．活跃保证学习效果</label></p>
+                    <p class="a"><label><input type="radio">B．不是很好需要改</label></p>
+                    <p class="a"><label><input type="radio">C．氛围很差</label></p>
+                </div>
+            </div>
+            <div class="sel">
+                <p>3．总体而言培训达到您设定的期望了吗？</p>
+                <div class="ans">
+                    <p class="a"><label><input type="radio">A．达到或超过预期</label></p>
+                    <p class="a"><label><input type="radio">B．基本达到预期</label></p>
+                    <p class="a"><label><input type="radio">C．没有达到预期</label></p>
+                </div>
+            </div>
+            <div class="sel">
+                <p>4．本次培训的场地您满意吗？</p>
+                <div class="ans">
+                    <p class="a"><label><input type="radio">A．满意</label></p>
+                    <p class="a"><label><input type="radio">B．一般</label></p>
+                    <p class="a"><label><input type="radio">C．满意</label></p>
+                </div>
+            </div>
+            <div class="sel">
+                <p>５．本次培训的组织您满意吗？</p>
+                <div class="ans">
+                    <p class="a"><label><input type="radio">A．满意</label></p>
+                    <p class="a"><label><input type="radio">B．一般</label></p>
+                    <p class="a"><label><input type="radio">C．满意</label></p>
+                </div>
+            </div>
+            <div class="wt">
+                <p class="t">6．您认为此次培训还应增加哪些方面的课程？</p>
+                <div class="fill">
+                    <textarea class="area">*本人志愿参加“青益计划”项目能力提升培训，并承诺所...</textarea>
+                </div>
+            </div>
+            <div class="wt">
+                <p class="t">7．您认为此次培训哪些课程是对您最有用的？</p>
+                <div class="fill">
+                    <textarea class="area"></textarea>
+                </div>
+            </div>
+            <div class="wt">
+                <p class="t">8．您认为线上的课程配套，还有哪些需要改进?</p>
+                <div class="fill">
+                    <textarea class="area"></textarea>
+                </div>
+            </div>
+            <div class="wt">
+                <p class="t">9．您认为培训在组织上，还需要进行哪些改进??</p>
+                <div class="fill">
+                    <textarea class="area"></textarea>
+                </div>
+            </div>
+            <div class="wt">
+                <p class="t">10．您还有什么意见或者建议？?</p>
+                <div class="fill">
+                    <textarea class="area"></textarea>
+                </div>
+            </div>
+            <div class="opt">
+                <p class="wish">期待工作坊培训再见！</p>
+                <button class="g-btn" type="submit">确认提交</button>
+            </div>
+        </form>
+    </div>
+    <script src="./js/zepto.js"></script>
+</body>
+</html
