@@ -1,25 +1,33 @@
 (function() {
+    var $form = $("form");
     var regRule = {
         require: function(val, el) {
+            if (el.type == "radio") {
+                var $radio = $form.find("[name=" + el.name + "]");
+                var isChekcked = false;
+                $.each($radio, function(idx, radio){
+                    if (radio.checked) {
+                        isChekcked = true;
+                        return false;
+                    }
+                });
+                return isChekcked;
+            }
             if (el.type == "checkbox") {
                 return el.checked;
             }
             return !!$.trim(val);
         },
         identity: function(val) {
-            return true;
             return /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/.test(val);
         },
         email: function(val) {
-            return true;
             return /\w@\w*\.\w/.test(val);
         },
         phone: function(val) {
-            return true;
             return /^1[0-9]{10}$/.test(val);
         }
     }
-    var $form = $("form");
     $form.on("submit", function(e) {
         if ($form.data("isOk")) {
             return;
