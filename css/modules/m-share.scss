@@ -4,6 +4,8 @@
     justify-content: flex-start;
     align-items: center;
     width: 750/$tr;
+    max-width: 750px;
+    margin: 0 auto;
     background: linear-gradient(#aadffa,#ffffff,#ffffff);
     .top {
         width: 100%;

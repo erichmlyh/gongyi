@@ -24,8 +24,9 @@
         height: 80/$tr;
         border-radius: 40/$tr;
         margin-top: 36/$tr;
+
         background-color: #fff;
-        box-shadow: 0 1px 1px rgba(80,156,154,0.2), 0 -1px 1px rgba(80,156,154,0.2), 1px 0 1px rgba(80,156,154,0.2), -1px 0 1px rgba(80,156,154,0.2);
+        box-shadow: 0 0 8/$tr 0 rgba(80,156,154,0.2);
 
         text-align: center;
         vertical-align: middle;

@@ -85,7 +85,7 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 
 .score .socre-mine .row .finish { display: flex; flex-flow: row nowrap; justify-content: flex-end; align-items: center; color: #ff7d09; }
 
-.score .socre-mine .row .finish:before { content: ""; display: block; width: 1.75rem; height: 1.5625rem; background: url("../images/finish.png"); background-size: 100%; }
+.score .socre-mine .row .finish:before { content: ""; display: block; width: 1.75rem; height: 1.5625rem; margin-right: 0.1875rem; background: url("../images/finish.png"); background-size: 100%; }
 
 .score .socre-mine .row-last { height: 4.0625rem; }
 

@@ -51,7 +51,7 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 
 .g-select:-ms-expand { display: none; }
 
-.share { display: flex; flex-flow: column nowrap; justify-content: flex-start; align-items: center; width: 23.4375rem; background: linear-gradient(#aadffa, #ffffff, #ffffff); }
+.share { display: flex; flex-flow: column nowrap; justify-content: flex-start; align-items: center; width: 23.4375rem; max-width: 750px; margin: 0 auto; background: linear-gradient(#aadffa, #ffffff, #ffffff); }
 
 .share .top { width: 100%; height: 19.875rem; margin-bottom: 1.0625rem; }
 

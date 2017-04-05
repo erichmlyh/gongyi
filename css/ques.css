@@ -95,7 +95,7 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 
 .m-ques .wt .t { margin-left: 1.875rem; }
 
-.m-ques .wt .fill { height: 3.75rem; margin: 0.625rem 1.25rem 0; border: 1px solid #e0e4ec; padding: 0.625rem; }
+.m-ques .wt .fill { height: 3.75rem; margin: 0.625rem 1.25rem 0; border: 1px solid #e0e4ec; border-radius: 0.1875rem; padding: 0.625rem; }
 
 .m-ques .wt .fill .area { height: 100%; width: 100%; line-height: 1.3125rem; outline: none; resize: none; }
 

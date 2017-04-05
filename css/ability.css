@@ -92,3 +92,5 @@ body { position: relative; height: 100%; width: 100%; cursor: pointer; -webkit-t
 .m-ability .agree .check { display: none; }
 
 .m-ability .agree .check:checked + .ifo:before { background-image: url("../../qingyi/images/checked.png"); }
+
+.m-ability .row .label { width: 6.25rem; }

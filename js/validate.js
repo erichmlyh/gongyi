@@ -1,13 +1,22 @@
 (function() {
     var regRule = {
-        require: function(val) {
+        require: function(val, el) {
+            if (el.type == "checkbox") {
+                return el.checked;
+            }
             return !!$.trim(val);
         },
         identity: function(val) {
+            return true;
             return /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/.test(val);
         },
         email: function(val) {
+            return true;
             return /\w@\w*\.\w/.test(val);
+        },
+        phone: function(val) {
+            return true;
+            return /^1[0-9]{10}$/.test(val);
         }
     }
     var $form = $("form");
@@ -23,7 +32,7 @@
             var $el = $(el);
             var reg = $el.data("reg");
             // 校验通过
-            if (reg && regRule[reg] && regRule[reg](el.value)) {
+            if (reg && regRule[reg] && regRule[reg](el.value, el)) {
                 return true;
             }
             isOk = false;

@@ -44,4 +44,9 @@
             background-image: url("../../qingyi/images/checked.png");
         }
     }
+    .row {
+        .label {
+            width: 200/$tr;
+        }
+    }
 }

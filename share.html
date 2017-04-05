@@ -22,7 +22,8 @@
                 resetScreen();
             });
             function resetRem() {
-                html.style.fontSize = html.clientWidth * 16/ 375 + 'px';
+                var clientWidth = (html.clientWidth>750) ? 750 : html.clientWidth;
+                html.style.fontSize = clientWidth * 16/ 375 + 'px';
             }
             function resetScreen() {
                 var height = html.clientHeight || window.innerHeight;
