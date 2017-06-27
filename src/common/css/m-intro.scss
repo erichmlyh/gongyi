@@ -16,14 +16,17 @@
             width: 50px;
         }
         .num {
-            margin-top: 20px;
             color: #ea5300;
             font-size: 90px;
             font-weight: bold;
         }
         .ifo {
+            margin-top: -10px;
             font-size: 18px;
             color: #333;
         }
     }
+}
+.bgpic {
+    background-image: url('../images/gy4_bg.jpg');
 }
