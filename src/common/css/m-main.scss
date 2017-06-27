@@ -1,0 +1,30 @@
+.m-main {
+    display: flex;
+    justify-content: space-between;
+    width: 1120px;
+    margin: 10px auto;
+    .nav {
+        width: 180px;
+        min-height: 730px;
+        background-color: #fff;
+        li {
+            margin-bottom: 1px;
+            font-size: 14px;
+            a {
+                display: block;
+                line-height: 60px;
+                text-align: center;
+                color: rgba(0, 0, 0, 0.5);
+            }
+            a:hover, .active {
+                background-color: #f76d02;
+                color: #fff;
+            }
+        }
+    }
+    .container {
+        margin-left: 20px;
+        width: 100%;
+        background-color: #fff;
+    }
+}

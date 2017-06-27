@@ -1,0 +1,30 @@
+.m-footer {
+    background-color: #333;
+    font-size: 14px;
+    .links {
+        margin: 0 auto;
+        width: 560px;
+        padding: 50px 0;
+        ul {
+            overflow: hidden;
+            li {
+                float: left;
+                width: 70px;
+            }
+            a {
+                display: block;
+                margin-right: -1px;
+                line-height: 1;
+                text-align: center;
+                border-right: 1px dashed #fff;
+                color: #fff;
+            }
+        }
+    }
+    .copyright {
+        line-height: 80px;
+        background-color: #262626;
+        color: rgba(255, 255, 255, 0.4);
+        text-align: center;
+    }
+}

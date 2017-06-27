@@ -1,0 +1,55 @@
+.m-proboard {
+    margin: 0 auto;
+    width: 1100px;
+    padding: 10px;
+    .tabs {
+        margin: 20px 0 45px;
+        text-align: center;
+        .tit {
+            font-size: 24px;
+            &:first-child {
+                margin-right: 100px;
+            }
+        }
+        .cur {
+            color: #ea5300;
+        }
+    }
+    .lst {
+        display: flex;
+        justify-content: space-around;
+        .itm {
+            width: 250px;
+            img {
+                width: 100%;
+            }
+            .tit {
+                margin: 10px 0;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .time {
+                margin-bottom: 10px;
+                font-size: 14px;
+                opacity: 0.5;
+            }
+            .dtl {
+                margin-bottom: 10px;
+                font-size: 14px;
+                opacity: 0.8;
+            }
+            .btn {
+                display: block;
+                margin: 0 auto;
+                width: 120px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 3px;
+                background-color: #f76d02;
+                color: #fff;
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+    }
+}

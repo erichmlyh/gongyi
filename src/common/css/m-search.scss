@@ -1,0 +1,65 @@
+.m-search {
+    .form {
+        margin: 25px 60px;
+        .rows {
+            margin-bottom: 5px;
+            text-align: right;
+        }
+        .col {
+            display: inline-block;
+            margin-right: 20px;
+            text-align: left;
+        }
+        .btn {
+            padding: 2px 25px;
+            border-radius: 3px;
+            background-color: #f76d02;
+            color: #fff;
+        }
+        .ipt {
+            width: 120px;
+            height: 20px;
+        }
+        .select {
+            width: 80px;
+            height: 20px;
+        }
+    }
+    .result {
+        margin: 0 40px;
+        .rows {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 40px;
+        }
+        .itm {
+            width: 180px;
+        }
+        img {
+            width: 100%;
+        }
+        .tit {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+    .pagenation {
+        font-size: 14px;
+        margin: 0 auto;
+        width: 380px;
+        .ipt {
+            width: 20px;
+            text-align: center;
+        }
+        span {
+            padding-right: 8px;
+        }
+        .btn {
+            padding: 1px 10px;
+            border-radius: 3px;
+            background-color: #f76d02;
+            color: #fff;
+        }
+    }
+}

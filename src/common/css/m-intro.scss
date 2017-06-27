@@ -1,0 +1,29 @@
+.m-intro {
+    width: 100%;
+    background-color: #fff;
+    .ito {
+        overflow: hidden;
+        margin: 0 auto;
+        width: 1020px;
+        .itm {
+            float: left;
+            width: 250px;
+            height: 180px;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .icon {
+            width: 50px;
+        }
+        .num {
+            margin-top: 20px;
+            color: #ea5300;
+            font-size: 90px;
+            font-weight: bold;
+        }
+        .ifo {
+            font-size: 18px;
+            color: #333;
+        }
+    }
+}

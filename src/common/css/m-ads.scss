@@ -1,0 +1,41 @@
+.m-ads {
+    background-color: #fff;
+    .tabs {
+        margin: 0 auto;
+        padding: 35px 0 30px;
+        width: 1120px;
+        text-align: center;
+        .tit {
+            font-size: 24px;
+            margin-right: 100px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .cur {
+            color: #ea5300;
+        }
+    }
+    .ads {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 0 60px;
+        width: 1000px;
+        .itm {
+            margin-bottom: 15px;
+        }
+        .img {
+            width: 180px;
+            img {
+                width: 100%;
+            }
+        }
+        .tit {
+            margin: 10px 0;
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+}
