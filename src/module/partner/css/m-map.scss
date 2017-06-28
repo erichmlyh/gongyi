@@ -1,5 +1,18 @@
 .m-map {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
     padding: 30px 0;
     height: 480px;
-    width: 100%;
+    width: 1120px;
+    .map {
+        width: 600px;
+        height: 100%;
+        margin-right: 40px;
+    }
+    .dtl {
+        width: 400px;
+        height: 100%;
+        background-color: #fff;
+    }
 }
