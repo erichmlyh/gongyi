@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伙伴社团</title>
+</head>
+
+<body>
+    <div class="m-header">
+        <div class="top">
+            <p>热线电话：400-8208820</p>
+            <ul class="nav">
+                <li><a href="javascript:;">后台登入</a></li>
+                <li><a href="javascript:;">登陆/注册</a></li>
+                <li><a href="javascript:;">团队入口</a></li>
+            </ul>
+        </div>
+        <div class="bottom">
+            <div class="cnt">
+                <div>
+                    <img class="logo" alt="logo" src="../../common/images/logo.png" ></img>
+                    <p class="tip">助力青年发展，畅想公益未来</p>
+                </div>
+                <ul class="nav">
+                    <li><a href="javascript:;">首页</a></li>
+                    <li><a href="javascript:;">关于我们</a></li>
+                    <li><a href="javascript:;">项目申请</a></li>
+                    <li><a href="javascript:;">善行100</a></li>
+                    <li><a href="javascript:;" class="active">伙伴社团</a></li>
+                    <li><a href="javascript:;">在线课堂</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="m-map">
+        <div id="main" style="width: 600px;height:400px;"></div>
+    </div>
+    <div class="m-footer">
+        <div class="links">
+            <ul>
+                <li><a href="javascript:;">团体介绍</a></li>
+                <li><a href="javascript:;">广告服务</a></li>
+                <li><a href="javascript:;">联系我们</a></li>
+                <li><a href="javascript:;">招聘信息</a></li>
+                <li><a href="javascript:;">网站律师</a></li>
+                <li><a href="javascript:;">团体注册</a></li>
+                <li><a href="javascript:;">产品答疑</a></li>
+                <li><a href="javascript:;">咨询服务</a></li>
+            </ul>
+        </div>
+        <p class="copyright">
+            Copyright (c) All Rgiht Reserved 版权所有 |滇|CP备13003106号
+        </p>
+    </div>
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/echarts.min.js"></script>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+        var option = {
+            tooltip: {
+                trigger: 'item',
+                formatter: '{b}'
+            },
+            series: [
+                {
+                    name: '中国',
+                    type: 'map',
+                    mapType: 'china',
+                    selectedMode : 'multiple',
+                    label: {
+                        normal: {
+                            show: true
+                        },
+                        emphasis: {
+                            show: true
+                        }
+                    },
+                    data:[
+                        {name:'广东', selected:true}
+                    ]
+                }
+            ]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+
+</html>
