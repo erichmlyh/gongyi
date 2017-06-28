@@ -1,0 +1,40 @@
+.m-activity {
+    padding: 0 10px;
+    border-bottom: 1px solid #e7e7e7;
+    img {
+        width: 760px;
+        height: 240px;
+    }
+    .tit {
+        margin: 15px 0;
+        font-size: 24px;
+        .progress {
+            margin-left: 20px;
+            padding: 1px 6px;
+            font-size: 14px;
+            color: #fff;
+            background-color: #67ddab;
+            vertical-align: middle;
+        }
+    }
+    .time {
+        opacity: 0.4;
+        margin-bottom: 15px;
+    }
+    .btn {
+        display: inline-block;
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin-right: 20px;
+        font-size: 18px;
+        border-radius: 3px;
+        border: 1px solid #f76d02;
+        color: #f76d02;
+    }
+    .fill {
+        background-color: #f76d02;
+        color: #fff;
+    }
+}
