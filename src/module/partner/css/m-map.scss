@@ -3,7 +3,6 @@
     justify-content: space-between;
     margin: 0 auto;
     padding: 30px 0;
-    height: 480px;
     width: 1120px;
     .map {
         width: 600px;
@@ -13,6 +12,34 @@
     .dtl {
         width: 400px;
         height: 100%;
+        padding: 30px 40px 0;
         background-color: #fff;
+        .tit {
+            margin-bottom: 10px;
+            font-size: 24px;
+            text-align: center;
+        }
+        .ifo {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding: 0 10px;
+            border-bottom: 1px solid #e6e6e6;
+            line-height: 30px;
+        }
+        .itm {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+            line-height: 50px;
+        }
+    }
+    .sum {
+        border-top: 1px solid #e6e6e6;
+        text-align: center;
+        .num {
+            font-size: 90px;
+            color: #ea5300;
+        }
     }
 }
