@@ -2,6 +2,7 @@ import "css/reset.css";
 import "css/basic.scss";
 import "./css/m-map.scss";
 import "./css/m-proboard.scss";
+import "./css/m-corp.scss";
 
 var myChart = echarts.init(document.getElementById('j_map'));
 
