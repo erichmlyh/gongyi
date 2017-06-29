@@ -1,0 +1,35 @@
+.m-list {
+    margin-top: 10px;
+    border-top: 1px solid #f6f6f6;
+    .itm {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0 20px 20px;
+        border-bottom: 1px solid #f6f6f6;
+        img {
+            width: 240px;
+        }
+    }
+    .dtl {
+        margin-left: 20px;
+        .tit {
+            font-size: 24px;
+            margin-bottom: 50px;
+        }
+        .abs {
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+        .ifo {
+            font-size: 12px;
+            opacity: 0.4;
+        }
+        .btn {
+            float: right;
+            display: inline-block;
+            background-color: #f98700;
+            padding: 0 15px;
+            color: #fff;
+        }
+    }
+}
