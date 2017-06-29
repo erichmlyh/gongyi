@@ -1,0 +1,23 @@
+.m-detail {
+    .title {
+        border-bottom: 1px solid #f6f6f6;
+        .tit {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .sub {
+            opacity: 0.4;
+            margin-bottom: 15px;
+        }
+    }
+    .detail {
+        margin: 30px 10px;
+        .pic {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .intro {
+            margin-bottom: 5px;
+        }
+    }
+}
