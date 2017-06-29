@@ -1,0 +1,19 @@
+.m-pagenation {
+    font-size: 14px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 380px;
+    .ipt {
+        width: 20px;
+        text-align: center;
+    }
+    span {
+        padding-right: 8px;
+    }
+    .btn {
+        padding: 1px 10px;
+        border-radius: 3px;
+        background-color: #f76d02;
+        color: #fff;
+    }
+}

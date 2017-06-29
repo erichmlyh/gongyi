@@ -1,0 +1,26 @@
+.m-form {
+    margin: 25px 60px;
+    .rows {
+        margin-bottom: 5px;
+        text-align: right;
+    }
+    .col {
+        display: inline-block;
+        margin-right: 20px;
+        text-align: left;
+    }
+    .btn {
+        padding: 2px 25px;
+        border-radius: 3px;
+        background-color: #f76d02;
+        color: #fff;
+    }
+    .ipt {
+        width: 120px;
+        height: 20px;
+    }
+    .select {
+        width: 80px;
+        height: 20px;
+    }
+}
