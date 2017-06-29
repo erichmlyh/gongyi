@@ -1,11 +1,18 @@
 .m-container {
-    width: 1120px;
-    margin: 0 auto;
+    background-color: #fff;
     .nav {
         margin-top: -20px;
         line-height: 30px;
+        background-color: #f6f6f6;
+        p {
+            margin: 0 auto;
+            padding-left: 10px;
+            width: 1110px;
+        }
     }
     .main {
+        margin: 0 auto;
+        width: 1120px;
         display: flex;
         justify-content: space-between;
         padding-top: 20px;
