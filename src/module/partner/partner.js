@@ -4,9 +4,7 @@ import "./css/m-map.scss";
 import "./css/m-proboard.scss";
 import "./css/m-corp.scss";
 
-var myChart = echarts.init(document.getElementById('j_map'));
-
-// 指定图表的配置项和数据
+var chart = echarts.init(document.getElementById('j_map'));
 var option = {
     tooltip: {
         trigger: 'item',
@@ -17,7 +15,7 @@ var option = {
             name: '中国',
             type: 'map',
             mapType: 'china',
-            selectedMode : 'multiple',
+            // selectedMode : 'multiple',
             label: {
                 normal: {
                     show: true
@@ -26,12 +24,11 @@ var option = {
                     show: true
                 }
             },
-            data:[
-                {name:'广东', selected:true}
-            ]
         }
     ]
 };
-
-// 使用刚指定的配置项和数据显示图表。
-myChart.setOption(option);
+chart.setOption(option);
+chart.on('click', function (params) {
+    var city = params.name;
+    console.log(city);
+});
