@@ -1,0 +1,41 @@
+.m-forme {
+    .row {
+        margin-bottom: 20px;
+    }
+    .label {
+        display: inline-block;
+        margin-right: 70px;
+        width: 100px;
+        text-align: right;
+        opacity: 0.5;
+    }
+    .ipt {
+        margin-right: 10px;
+        padding-left: 10px;
+        width: 220px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    .btnbox {
+        padding-top: 40px;
+        border-top: 1px solid #ddd;
+        text-align: right;
+        .btn {
+            display: inline-block;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 3px;
+            background-color: #f98700;
+            color: #fff;
+            text-align: center;
+        }
+        .btncancel {
+            margin-right: 40px;
+            color: #999;
+            text-decoration: underline;
+        }
+    }
+}
