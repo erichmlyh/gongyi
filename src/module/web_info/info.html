@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>公益未来-善行100</title>
+    <script type="text/javascript">
+        (function () {
+            var newFontSize = window.getComputedStyle(document.documentElement)['font-size'];
+            var fontSizeScale = 16 / parseFloat(newFontSize.replace('px', ''));
+            //获取屏幕大小
+            var html = document.documentElement;
+            document.addEventListener('DOMContentLoaded', function () {
+                resetRem();
+                resetScreen();
+            });
+            window.addEventListener('load', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            window.addEventListener('resize', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            function resetRem() {
+                html.style.fontSize = html.clientWidth * 16 / 320 * fontSizeScale + 'px';
+            }
+            function resetScreen() {
+                window.scrollTo(0, 0);
+                var height = html.clientHeight || window.innerHeight;
+                var width = html.clientWidth || window.innerWidth;
+                document.querySelector('body').style.height = height + 'px';
+                document.querySelector('body').style.width = width + 'px';
+                document.querySelector('.page').style.minHeight = height + 'px';
+            }
+            resetRem();
+        })();
+    </script>
+</head>
+
+<body>
+    <section class="page w-trianglebg">
+        <div class="title">
+            <img src="./images/info.png" alt="">
+            <p class="content">我的成绩</p>
+        </div>
+        
+        <ul class="info">
+            <li class="item">
+                <p class="left">姓名</p>
+                <p class="right">张三</p>
+            </li>
+            <li class="item">
+                <p class="left">学校</p>
+                <p class="right">北京师范大学</p>
+            </li>
+             <li class="item">
+                <p class="left">省份</p>
+                <p class="right">北京 </p>
+            </li>
+            <li class="item">
+                <p class="left">城市</p>
+                <p class="right">北京</p>
+            </li>
+            <li class="item">
+                <p class="left">年级</p>
+                <p class="right">大二</p>
+            </li>
+            <li class="item">
+                <p class="left">专业</p>
+                <p class="right">信息管理</p>
+            </li>
+            <li class="item">
+                <p class="left">手机</p>
+                <p class="right">13810221313</p>
+            </li>
+            <li class="item">
+                <p class="left">邮箱</p>
+                <p class="right">121214@sina.com</p>
+            </li>
+            <li class="item">
+                <p class="left">QQ</p>
+                <p class="right">53231323</p>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>
