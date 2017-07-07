@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>公益未来-善行100</title>
+    <script type="text/javascript">
+        (function () {
+            var newFontSize = window.getComputedStyle(document.documentElement)['font-size'];
+            var fontSizeScale = 16 / parseFloat(newFontSize.replace('px','')) ;
+            //获取屏幕大小
+            var html = document.documentElement;
+            document.addEventListener('DOMContentLoaded', function () {
+                resetRem();
+                resetScreen();
+            });
+            window.addEventListener('load', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            window.addEventListener('resize', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            function resetRem() {
+                html.style.fontSize = html.clientWidth * 16 / 320 * fontSizeScale + 'px';
+            }
+            function resetScreen() {
+                window.scrollTo(0,0);
+                var height = html.clientHeight || window.innerHeight;
+                var width = html.clientWidth || window.innerWidth;
+                document.querySelector('body').style.height = height + 'px';
+                document.querySelector('body').style.width = width + 'px';
+                document.querySelector('.page').style.minHeight = height + 'px';
+            }
+            resetRem();
+        })();
+    </script>
+</head>
+<body>
+    <section class="page w-trianglebg">
+       <div class="title">
+           <img src="./images/question.png" alt="">
+           <p class="content">常见问题</p>
+       </div>
+       <div class="item">
+           <p class="question">Q1：为什么是这样</p>
+           <p class="answer">如果你无法简洁的表达你的想法，那只说明你还不够了解它。 如果你无法简洁的表达你的想法，那只说明你还不够了解它。 </p>
+       </div>
+       <div class="item">
+           <p class="question">Q1：为什么是这样</p>
+           <p class="answer">如果你无法简洁的表达你的想法，那只说明你还不够了解它。 如果你无法简洁的表达你的想法，那只说明你还不够了解它。 </p>
+       </div>
+       <div class="item">
+           <p class="question">Q1：为什么是这样</p>
+           <p class="answer">如果你无法简洁的表达你的想法，那只说明你还不够了解它。 如果你无法简洁的表达你的想法，那只说明你还不够了解它。 </p>
+       </div>
+    </section>
+</body>
+</html>

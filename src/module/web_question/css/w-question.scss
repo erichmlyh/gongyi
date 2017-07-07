@@ -1,0 +1,35 @@
+@import "../../../common/css/w-common.scss";
+
+.page {
+    .title {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+
+        height: 310/$tr;
+        img {
+            margin-left: 150/$tr;
+            width: 180/$tr;
+            height: 180/$tr;
+        }
+        .content {
+            color: #333;
+            font-size: 48/$tr;
+            margin-left: 60/$tr;
+        }
+    }
+    .item {
+        margin: 0 150/$tr 64/$tr 150/$tr;
+        .question {
+            color: #333;
+            font-size: 48/$tr;
+            line-height: 1.7;
+        }
+        .answer {
+            color: #333;
+            font-size: 36/$tr;
+            line-height: 1.5;
+        }
+    }
+}
