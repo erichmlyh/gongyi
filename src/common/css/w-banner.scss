@@ -1,0 +1,49 @@
+@import "./w-common.scss";
+.w-banner {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 1080/$tr;
+    height: 600/$tr;
+
+    background-image: url('../images/w-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    .city {
+        flex: 0 0 auto;
+        color: #fff;
+        font-size: 36/$tr;
+        padding: 50/$tr 30/$tr;
+    }
+    .me {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        .pic {
+            display: block;
+            width: 240/$tr;
+            height: 240/$tr;
+        }
+        .name {
+            color: #fff;
+            font-size: 36/$tr;
+        }
+    }
+    .more {
+        flex: 0 0 auto;
+        width: 80/$tr;
+        height: 80/$tr;
+
+        padding: 25/$tr 30/$tr;
+        background-image: url('../images/more.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        background-origin: content-box;
+    }
+}

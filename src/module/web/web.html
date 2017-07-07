@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>公益未来-善行100</title>
+    <script type="text/javascript">
+        (function () {
+            var newFontSize = window.getComputedStyle(document.documentElement)['font-size'];
+            var fontSizeScale = 16 / parseFloat(newFontSize.replace('px','')) ;
+            //获取屏幕大小
+            var html = document.documentElement;
+            document.addEventListener('DOMContentLoaded', function () {
+                resetRem();
+                resetScreen();
+            });
+            window.addEventListener('load', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            window.addEventListener('resize', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            function resetRem() {
+                html.style.fontSize = html.clientWidth * 16 / 320 * fontSizeScale + 'px';
+            }
+            function resetScreen() {
+                window.scrollTo(0,0);
+                var height = html.clientHeight || window.innerHeight;
+                var width = html.clientWidth || window.innerWidth;
+                document.querySelector('body').style.height = height + 'px';
+                document.querySelector('body').style.width = width + 'px';
+                document.querySelector('.page').style.minHeight = height + 'px';
+            }
+            resetRem();
+        })();
+    </script>
+</head>
+<body>
+    <section class="page">
+        <div class="w-banner">
+            <p class="city">北京市</p>
+            <div class="me">
+                <img src="./images/icon.png" alt="" class="pic">
+                <p class="name">张三十三</p>
+            </div>
+            <div class="more"></div>
+        </div>
+        <div class="w-myinfo">
+            <div class="left content">
+                <p class="title">服务时长</p>
+                <p class="num">0</p>
+            </div>
+            <div class="middle"></div>
+            <div class="right content">
+                <p class="title">筹款金额</p>
+                <p class="num">0.00</p>
+             </div>
+        </div>
+        <div class="w-entry">
+            <div class="row">
+                <a href="javascript: void 0;" class="item">
+                    <img src="./images/intro.png" alt="">
+                    <p class="words">项目介绍</p>
+                </a>
+                <a href="javascript: void 0;" class="item">
+                    <img src="./images/baoming.png" alt="">
+                    <p class="words">我要报名</p>
+                </a>
+                <a href="javascript: void 0;" class="item">
+                    <img src="./images/chaxun.png" alt="">
+                    <p class="words">我要查询</p>
+                </a>
+            </div>
+            <div class="row">
+                <a href="javascript: void 0;" class="item">
+                    <img src="./images/luru.png" alt="">
+                    <p class="words">成绩录入</p>
+                </a>
+                <a href="javascript: void 0;" class="item">
+                    <img src="./images/rank.png" alt="">
+                    <p class="words">成绩排名</p>
+                </a>
+                <a href="javascript: void 0;" class="item">
+                    <img src="./images/question.png" alt="">
+                    <p class="words">常见问题</p>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

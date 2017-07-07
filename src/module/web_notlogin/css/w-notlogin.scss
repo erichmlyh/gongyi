@@ -1,0 +1,43 @@
+@import "../../../common/css/w-common.scss";
+
+.page {
+    
+    .w-entry {
+        background-color: #fff;
+        .row {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+            height: 424/$tr;
+            .item {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                
+                width: 50%;
+                height: 424/$tr;
+                img {
+                    display: block;
+                    width: 180/$tr;
+                    height: 180/$tr;
+                }
+                .words {
+                    margin-top: 10/$tr;
+                    color: #333;
+                    font-size: 36/$tr;
+                    line-height: 48/$tr;
+                    text-align: center;
+                }
+                &:first-child {
+                    border-right: 1px solid rgb(204, 204, 204);
+                }
+            }
+            &:first-child {
+                border-bottom: 1px solid rgb(204, 204, 204);
+            }
+        }
+        
+    }
+}
