@@ -1,0 +1,36 @@
+@import "../../../common/css/w-common.scss";
+
+.page {
+    .banner{
+        display: block;
+        width: 100%;
+        height: 417/$tr;
+    }
+    .tab {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30/$tr;
+        li {
+            width: 50%;
+            color: #999;
+            font-size: 48/$tr;
+            text-align: center;
+            height: 160/$tr;
+            line-height: 160/$tr;
+        }
+        .active {
+            color: #f76d02;
+            border-bottom: 6/$tr solid #f76d02;
+        }
+    }
+    .content{
+        padding: 0 110/$tr;
+        font-size: 36/$tr;
+        color: rgb(51, 51, 51);
+        line-height: 1.7;
+        word-spacing: 10/$tr;
+        text-indent: 72/$tr;
+    }
+}
