@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>公益未来-善行100</title>
+    <script type="text/javascript">
+        (function () {
+            var newFontSize = window.getComputedStyle(document.documentElement)['font-size'];
+            var fontSizeScale = 16 / parseFloat(newFontSize.replace('px', ''));
+            //获取屏幕大小
+            var html = document.documentElement;
+            document.addEventListener('DOMContentLoaded', function () {
+                resetRem();
+                resetScreen();
+            });
+            window.addEventListener('load', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            window.addEventListener('resize', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            function resetRem() {
+                html.style.fontSize = html.clientWidth * 16 / 320 * fontSizeScale + 'px';
+            }
+            function resetScreen() {
+                window.scrollTo(0, 0);
+                var height = html.clientHeight || window.innerHeight;
+                var width = html.clientWidth || window.innerWidth;
+                document.querySelector('body').style.height = height + 'px';
+                document.querySelector('body').style.width = width + 'px';
+                document.querySelector('.page').style.height = height + 'px';
+            }
+            resetRem();
+        })();
+    </script>
+</head>
+
+<body>
+    <section class="page">
+        <p class="title">登陆</p>
+        <form action="#" class="form">
+            <div class="wrapper">
+                <img src="./images/phone.png" alt="">
+                <input type="text" class="phone" placeholder="手机号">
+            </div>
+            <div class="wrapper">
+                <img src="./images/lock.png" alt="">
+                <input type="password" class="password" placeholder="密码">
+            </div>
+            <button class="login btn btn-main" type="submit">登陆</button>
+            <a class="reg btn" href="javascript: void 0;">注册</a>
+        </form>
+    </section>
+</body>
+
+</html>
