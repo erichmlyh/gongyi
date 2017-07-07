@@ -1,0 +1,8 @@
+@import "./w-common.scss";
+.w-trianglebg {
+    background-image: url("../images/triangle.png");
+    background-size: (444/$tr) (985/$tr);
+    background-position-x: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+}

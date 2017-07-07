@@ -1,0 +1,25 @@
+@import "../../../common/css/w-common.scss";
+
+.page {
+    .btns {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+
+        margin-top: 150/$tr;
+        .info {
+            width: 514/$tr;
+            height: 114/$tr;
+            margin-top: 64/$tr;
+            border-radius: 10/$tr;
+            border: 3/$tr solid rgb(204, 204, 204);
+
+            color: #666;
+            font-size: 42/$tr;
+
+            text-align: center;
+            line-height: 114/$tr;
+        }
+    }
+}
