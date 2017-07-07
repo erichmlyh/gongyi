@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>公益未来-善行100</title>
+    <script type="text/javascript">
+        (function () {
+            var newFontSize = window.getComputedStyle(document.documentElement)['font-size'];
+            var fontSizeScale = 16 / parseFloat(newFontSize.replace('px', ''));
+            //获取屏幕大小
+            var html = document.documentElement;
+            document.addEventListener('DOMContentLoaded', function () {
+                resetRem();
+                resetScreen();
+            });
+            window.addEventListener('load', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            window.addEventListener('resize', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            function resetRem() {
+                html.style.fontSize = html.clientWidth * 16 / 320 * fontSizeScale + 'px';
+            }
+            function resetScreen() {
+                window.scrollTo(0, 0);
+                var height = html.clientHeight || window.innerHeight;
+                var width = html.clientWidth || window.innerWidth;
+                document.querySelector('body').style.height = height + 'px';
+                document.querySelector('body').style.width = width + 'px';
+                document.querySelector('.page').style.minHeight = height + 'px';
+            }
+            resetRem();
+        })();
+    </script>
+</head>
+
+<body>
+    <section class="page w-trianglebg">
+        <div class="title">
+            <img src="./images/chaxun.png" alt="">
+            <p class="content">我的成绩</p>
+        </div>
+        
+        <ul class="info">
+            <li class="item">
+                <p class="left">姓名</p>
+                <p class="right">张三 </p>
+            </li>
+            <li class="item">
+                <p class="left">排名</p>
+                <p class="right">1 </p>
+            </li>
+            <li class="item">
+                <p class="left">学校</p>
+                <p class="right">北京师范大学 </p>
+            </li>
+            <li class="item">
+                <p class="left">美术包（数量）</p>
+                <p class="right">12 </p>
+            </li>
+            <li class="item">
+                <p class="left">温暖包（数量）</p>
+                <p class="right">12 </p>
+            </li>
+            <li class="item">
+                <p class="left">服务时长</p>
+                <p class="right">10天 </p>
+            </li>
+            <li class="item">
+                <p class="left">劝募总金额</p>
+                <p class="right">1000元 </p>
+            </li>
+        </ul>
+        <a href="javascript: void 0;" class="create">生成证书</a>
+    </section>
+</body>
+
+</html>

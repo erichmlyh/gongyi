@@ -1,0 +1,58 @@
+@import "../../../common/css/w-common.scss";
+
+.page {
+    .title {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+
+        height: 310/$tr;
+        img {
+            margin-left: 150/$tr;
+            width: 180/$tr;
+            height: 180/$tr;
+        }
+        .content {
+            color: #333;
+            font-size: 48/$tr;
+            margin-left: 60/$tr;
+        }
+    }
+    .info {
+         margin: 0 150/$tr 64/$tr 150/$tr;
+         .item {
+             display: flex;
+             flex-flow: row nowrap;
+             justify-content: flex-start;
+             align-items: center;
+             height: 100/$tr;
+            .left {
+                width: 50%;
+                color: #666;
+                font-size: 36/$tr;
+            }
+            .right {
+                width: 50%;
+                color: #666;
+                font-size: 36/$tr;
+            }
+        }
+    }
+    .create {
+        display: block;
+        margin: 70/$tr auto;
+        width: 770/$tr;
+        height: 120/$tr;
+        text-align: center;
+        line-height: 120/$tr;
+
+        color: #fff;
+        font-size: 42/$tr;
+
+        background-image: url("../images/btn.png");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
