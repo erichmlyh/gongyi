@@ -1,0 +1,88 @@
+@import "../../../common/css/w-common.scss";
+
+.page {
+    .title {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+
+        height: 310/$tr;
+        img {
+            margin-left: 150/$tr;
+            width: 180/$tr;
+            height: 180/$tr;
+        }
+        .content {
+            color: #333;
+            font-size: 48/$tr;
+            margin-left: 60/$tr;
+        }
+    }
+    .info {
+         margin: 0 150/$tr 64/$tr 150/$tr;
+         .item {
+             display: flex;
+             flex-flow: row nowrap;
+             justify-content: flex-start;
+             align-items: center;
+             height: 100/$tr;
+            .left {
+                width: 50%;
+                color: #666;
+                font-size: 36/$tr;
+            }
+            .right {
+                width: 50%;
+                color: #666;
+                font-size: 36/$tr;
+            }
+            .fill {
+                position: relative;
+                width: 400/$tr;
+                height: 60/$tr;
+                input, select {
+                    padding: 0 30/$tr;
+                    width: 340/$tr;
+                    height: 60/$tr;
+                    border-radius: 6/$tr;
+                    border: 3/$tr solid rgb(204, 204, 204);
+                    appearance: none;
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                    outline: none;
+                }
+                select {
+                    width: 400/$tr;
+                }
+                img {
+                    position: absolute;
+                    top: 50%;
+                    right: 26/$tr;
+                    transform: translateY(0%);
+                    width: 33/$tr;
+                }
+            }
+        }
+    }
+    .create {
+        display: block;
+        margin: 70/$tr auto;
+        width: 770/$tr;
+        height: 120/$tr;
+        text-align: center;
+        line-height: 120/$tr;
+
+        border: 0;
+        border: none;
+        outline: none;
+
+        color: #fff;
+        font-size: 42/$tr;
+
+        background-image: url("../images/btn.png");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}

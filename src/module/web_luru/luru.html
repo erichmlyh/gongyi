@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>公益未来-善行100</title>
+    <script type="text/javascript">
+        (function () {
+            var newFontSize = window.getComputedStyle(document.documentElement)['font-size'];
+            var fontSizeScale = 16 / parseFloat(newFontSize.replace('px', ''));
+            //获取屏幕大小
+            var html = document.documentElement;
+            document.addEventListener('DOMContentLoaded', function () {
+                resetRem();
+                resetScreen();
+            });
+            window.addEventListener('load', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            window.addEventListener('resize', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            function resetRem() {
+                html.style.fontSize = html.clientWidth * 16 / 320 * fontSizeScale + 'px';
+            }
+            function resetScreen() {
+                window.scrollTo(0, 0);
+                var height = html.clientHeight || window.innerHeight;
+                var width = html.clientWidth || window.innerWidth;
+                document.querySelector('body').style.height = height + 'px';
+                document.querySelector('body').style.width = width + 'px';
+                document.querySelector('.page').style.minHeight = height + 'px';
+            }
+            resetRem();
+        })();
+    </script>
+</head>
+
+<body>
+    <section class="page w-trianglebg">
+        <div class="title">
+            <img src="./images/luru.png" alt="">
+            <p class="content">成绩录入</p>
+        </div>
+        
+        <form action="#" class="info">
+            <div class="item">
+                <p class="left">姓名</p>
+                <p class="right">张三</p>
+            </div>
+            <div class="item">
+                <p class="left">学校</p>
+                <p class="right">北京师范大学</p>
+            </div>
+            <div class="item">
+                <p class="left">美术包（数量）</p>
+                <div class="fill">
+                    <input class="ipt" type="text" name="ms" data-reg="require" data-msg="请输入美术包数量">
+                </div>
+            </div>
+            <div class="item">
+                <p class="left">温暖包（数量）</p>
+                <div class="fill">
+                    <input class="ipt" type="text" name="wn" data-reg="require" data-msg="请输入温暖数量">
+                </div>
+            </div>
+            <div class="item">
+                <p class="left">劝募网点</p>
+                <div class="fill">
+                    <select class="sel g-select" name="position" data-reg="require" data-msg="请选择劝募网点">
+                        <option value="1">北京</option>
+                        <option value="2">南京</option>
+                    </select>
+                    <img src="./images/location.png" alt="">
+                </div>
+            </div>
+            <div class="item">
+                <p class="left">劝募网点劝募日期</p>
+                <div class="fill">
+                    <input class="ipt" type="date" name="rq" data-reg="require" data-msg="请输入劝募日期">
+                    <img src="./images/date.png" alt="">
+                </div>
+            </div>
+            <div class="item">
+                <p class="left">劝募总金额</p>
+                <div class="fill">
+                    <input class="ipt" type="number" name="je" data-reg="require" data-msg="请输入劝募总金额">
+                    <img src="./images/yuan.png" alt="">
+                </div>
+            </div>
+            <div class="item">
+                <p class="left">订单号</p>
+                <div class="fill">
+                    <input class="ipt" type="text" name="dd" data-reg="require" data-msg="请输入订单号">
+                </div>
+            </div>
+            <div class="item">
+                <p class="left">订单总金额</p>
+                <div class="fill">
+                    <input class="ipt" type="text" name="dje" data-reg="require" data-msg="请输入订单总金额">
+                </div>
+            </div>
+            <div class="item">
+                <p class="left">捐赠登录单</p>
+                <div class="fill">
+                    <input class="ipt" type="text" name="dld" data-reg="require" data-msg="请输入捐赠登录单">
+                </div>
+            </div>
+            <button class="g-btn create" type="submit">录入</button>
+        </form>
+    </section>
+</body>
+
+</html>
