@@ -19,4 +19,92 @@
             margin-left: 60/$tr;
         }
     }
+    .ranks {
+        display: flex;
+        flex-flow: row wrap;
+
+        margin-bottom: 50/$tr;
+        .each-rank {
+            width: 50%;
+            height: 180/$tr;
+            
+            text-align: center;
+            line-height: 180/$tr;
+            color: #666;
+            font-size: 36/$tr;
+
+            box-sizing: border-box;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+        }
+        .person-week {
+            background-image: url("../images/rankli4.png");
+        }
+        .person-all {
+            background-image: url("../images/rankli2.png");
+        }
+        .group-week {
+            background-image: url("../images/rankli3.png");
+        }
+        .group-all {
+            background-image: url("../images/rankli4.png");
+        }
+        .active {
+            color: #ea5300;
+            line-height: 168/$tr;
+            border: 12/$tr solid rgb(249, 135, 0);
+        }
+    }
+
+    .rank-list {
+        width: 100%;
+        thead {
+            height: 100/$tr;
+            tr {
+                line-height: 100/$tr;
+                color: #999;
+                font-size: 36/$tr;
+                background-color: #f5f5f5;
+            }
+            th {
+                text-align: center;
+            }
+        }
+        tbody {
+            height: 100/$tr;
+            &:before {
+                content: "";
+                display: table-row;
+                height: 15/$tr;
+            }
+            tr {
+                line-height: 100/$tr;
+                color: #333;
+                font-size: 36/$tr;
+                td {
+                    text-align: center;
+
+                    background-position: center;
+                    background-size: 73/$tr 87/$tr;
+                    background-repeat: no-repeat;
+                }
+                &:first-child {
+                    .rank {
+                        background-image: url("../images/first.png");
+                    }
+                }
+                &:nth-child(2) {
+                    .rank {
+                        background-image: url("../images/second.png");
+                    }
+                }
+                &:nth-child(3) {
+                    .rank {
+                        background-image: url("../images/third.png");
+                    }
+                }
+            }
+        }
+    }
 }
