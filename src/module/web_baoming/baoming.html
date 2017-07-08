@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>公益未来-善行100</title>
+    <script type="text/javascript">
+        (function () {
+            var newFontSize = window.getComputedStyle(document.documentElement)['font-size'];
+            var fontSizeScale = 16 / parseFloat(newFontSize.replace('px', ''));
+            //获取屏幕大小
+            var html = document.documentElement;
+            document.addEventListener('DOMContentLoaded', function () {
+                resetRem();
+                resetScreen();
+            });
+            window.addEventListener('load', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            window.addEventListener('resize', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            function resetRem() {
+                html.style.fontSize = html.clientWidth * 16 / 320 * fontSizeScale + 'px';
+            }
+            function resetScreen() {
+                window.scrollTo(0, 0);
+                var height = html.clientHeight || window.innerHeight;
+                var width = html.clientWidth || window.innerWidth;
+                document.querySelector('body').style.height = height + 'px';
+                document.querySelector('body').style.width = width + 'px';
+                document.querySelector('.page').style.minHeight = height + 'px';
+            }
+            resetRem();
+        })();
+    </script>
+</head>
+
+<body>
+    <section class="page w-trianglebg">
+        <div class="title">
+            <img src="./images/luru.png" alt="">
+            <p class="content">成绩录入</p>
+        </div>
+        
+        <form action="#" class="info">
+             <div class="item">
+                <p class="left">预计服务时间</p>
+                <div class="fill">
+                    <input class="ipt" type="date" name="rq" placeholder="选择日期" data-reg="require" data-msg="请输入劝募日期">
+                    <img src="./images/date.png" alt="">
+                </div>
+            </div>
+            <div class="item">
+                <p class="left">我的目标</p>
+                <div class="fill">
+                    <input class="ipt" type="text" name="ms" placeholder="我的目标" data-reg="require" data-msg="请输入我的目标">
+                </div>
+            </div>
+            <div class="item">
+                <p class="left">是否当小组长</p>
+                <div class="fill">
+                    <input class="ipt" type="text" name="wn" placeholder="是／否" data-reg="require" data-msg="请输入是否当小组长">
+                </div>
+            </div>
+            <div class="item">
+                <p class="left">是否参加过</p>
+                <div class="fill">
+                    <input class="ipt" type="text" name="dje" placeholder="参加过的角色" data-reg="require" data-msg="请输入是否参加过">
+                </div>
+            </div>
+            <div class="item">
+                <p class="left">获取的渠道</p>
+                <div class="fill">
+                    <input class="ipt" type="text" name="dld" data-reg="require" data-msg="请输入获取的渠道">
+                </div>
+            </div>
+            <div class="item">
+                <p class="left">我的宣言</p>
+            </div>
+            <div class="item">
+                <div class="fill">
+                    <textarea class="ipt"  name="dld" data-reg="require" data-msg="请输入我的宣言"></textarea>
+                </div>
+            </div>
+            <button class="g-btn create" type="submit">报名</button>
+        </form>
+    </section>
+</body>
+
+</html>
