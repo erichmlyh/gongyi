@@ -1,0 +1,61 @@
+@import "../../../common/css/w-common.scss";
+
+.page {
+    .title {
+        display: block;
+        margin: 0 auto 50/$tr auto;
+        padding-top: 110/$tr;
+        width: 343/$tr;
+        height: 106/$tr;
+    }
+    .info {
+         margin: 0 250/$tr 64/$tr 250/$tr;
+         .item {
+             display: flex;
+             flex-flow: row nowrap;
+             justify-content: flex-start;
+             align-items: flex-start;
+             height: 100/$tr;
+             margin-bottom: 50/$tr;
+             .left {
+                flex: 0 0 auto;
+                width: 120/$tr;
+                font-size: 36/$tr;
+                color: #333;
+                text-align: right;
+             }
+             input {
+                flex: 1 1 auto;
+                margin: 0 30/$tr 30/$tr 30/$tr;
+                height: 72/$tr;
+                border: 3/$tr solid rgb(204, 204, 204);
+                border-radius: 6/$tr;
+             }
+             .require {
+                flex: 0 0 auto;
+                font-size: 36/$tr;
+                color: #cc374b;
+             }
+        }
+    }
+    .register {
+        display: block;
+        margin: 70/$tr auto 0 auto;
+        width: 320/$tr;
+        height: 120/$tr;
+        text-align: center;
+        line-height: 120/$tr;
+
+        border-radius: 10/$tr;
+        border: 0;
+        border: none;
+        outline: none;
+
+        color: #fff;
+        font-size: 42/$tr;
+
+        background-image: url("../images/btn.png");
+        background-position: center;
+        background-size: 100%;
+    }
+}
