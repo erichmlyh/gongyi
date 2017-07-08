@@ -1,12 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>页面索引</title>
+    <script type="text/javascript">
+        (function () {
+            //获取屏幕大小
+            var html = document.documentElement;
+            document.addEventListener('DOMContentLoaded', function () {
+                resetRem();
+                resetScreen();
+            });
+            window.addEventListener('load', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            window.addEventListener('resize', function () {
+                setTimeout(resetRem, 300);
+                resetScreen();
+            });
+            function resetRem() {
+                html.style.fontSize = html.clientWidth * 16/ 375 + 'px';
+            }
+            function resetScreen() {
+                var height = html.clientHeight || window.innerHeight;
+                var width = html.clientWidth || window.innerWidth;
+                document.querySelector('body').style.width = width + 'px';
+            }
+            resetRem();
+        })();
+    </script>
+    <style>
+        .btn {
+            width: 12.5rem;
+            height: 2.5rem;
+            border: 0;
+            background: #1fa7a4;
+            color: #fff;
+            vertical-align: middle;
+            line-height: 2.5rem;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 1.25rem;
+            margin-top: 2rem;
+        }
+        .pages {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
-    <script>
-        location.href = "module/home.html";
-    </script>
+    <div class="pages">
+        <a href="module/question.html" class="btn">常见问题</a>
+        <a href="module/achievement.html" class="btn">成绩查询</a>
+        <a href="module/luru.html" class="btn">成绩录入</a>
+        <a href="module/rank.html" class="btn">成绩排名</a>
+        <a href="module/login.html" class="btn">登陆注册</a>
+        <a href="module/myinfo.html" class="btn">个人中心</a>
+        <a href="module/web.html" class="btn">首页</a>
+        <a href="module/wsxinxi.html" class="btn">完善信息</a>
+        <a href="module/notlogin.html" class="btn">未登录</a>
+        <a href="module/info.html" class="btn">我的信息</a>
+        <a href="module/baoming.html" class="btn">我要报名</a>
+        <a href="module/pro.html" class="btn">项目介绍</a>
+        <a href="module/register.html" class="btn">注册</a>
+    </div>
+    <script src="./js/zepto.js"></script>
 </body>
 </html>
