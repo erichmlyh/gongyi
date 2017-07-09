@@ -1,0 +1,30 @@
+.m-shetuan {
+    margin-bottom: 20px;
+    padding: 20px 20px 0;
+    background-color: #fff;
+    .tit {
+        border-left: 2px solid #f76d02;
+        padding-left: 20px;
+        font-size: 24px;
+        line-height: 1;
+    }
+    .more {
+        float: right;
+        text-decoration: underline;
+        opacity: 0.5;
+    }
+    .shetuan {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .itm {
+            margin-bottom: 20px;
+            width: 180px;
+            height: 60px;
+            line-height: 60px;
+            border: 1px solid #e6e6e6;
+            text-align: center;
+        }
+    }
+}
