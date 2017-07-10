@@ -1,0 +1,57 @@
+.m-tabs {
+    margin-bottom: 20px;
+    background-color: #fff;
+    .title {
+        overflow: hidden;
+        font-size: 0;
+        padding-right: 20px;
+        border-bottom: 2px solid #f98700;
+        .more {
+            float: right;
+            text-decoration: underline;
+            opacity: 0.5;
+            font-size: 14px;
+            line-height: 40px;
+        }
+        .tit {
+            a {
+                display: block;
+                float: left;
+                width: 110px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                font-size: 18px;
+                color: #666;
+            }
+            &:after {
+                content: "";
+                display: block;
+                float: left;
+                width: 0;
+                height: 0;
+                border-bottom: 40px solid transparent;
+                border-right: 40px solid transparent;;
+            }
+        }
+        .cur {
+            a {
+                color: #fff;
+                background-color: #f98700;
+            }
+            &:after {
+                border-bottom: 40px solid #f98700;
+            }
+        }
+    }
+    .ifo {
+        padding: 10px;
+        table {
+            width: 100%;
+            text-align: center;
+        }
+        .money {
+            color: #f98700;
+        }
+    }
+}
