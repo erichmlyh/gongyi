@@ -1,0 +1,29 @@
+.m-intro {
+    width: 100%;
+    background-color: #fff;
+    .ito {
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+        margin: 0 auto;
+        padding: 50px 0;
+        width: 1020px;
+        .itm {
+
+            text-align: center;
+        }
+        .icon {
+            width: 50px;
+        }
+        .num {
+            color: #ea5300;
+            font-size: 90px;
+            font-weight: bold;
+        }
+        .ifo {
+            margin-top: -10px;
+            font-size: 18px;
+            color: #333;
+        }
+    }
+}
