@@ -1,0 +1,27 @@
+.m-container {
+    background-color: #fff;
+    .nav {
+        margin-top: -20px;
+        line-height: 30px;
+        background-color: #f6f6f6;
+        p {
+            margin: 0 auto;
+            padding-left: 10px;
+            width: 1110px;
+        }
+    }
+    .main {
+        margin: 0 auto;
+        width: 1080px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        .content {
+            width: 640px;
+        }
+        .sider {
+            margin-left: 20px;
+            width: 420px;
+        }
+    }
+}
