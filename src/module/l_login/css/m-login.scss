@@ -1,0 +1,82 @@
+.m-login {
+    position: relative;
+    margin-top: -20px;
+    font-size: 0;
+    .bgimage {
+        width: 100%;
+    }
+    .board {
+        position: absolute;
+        right: 20%;
+        top: 130px;
+        padding: 60px 40px;
+        width: 340px;
+        height: 400px;
+        background-color: #fff;
+        .tit {
+            font-size: 30px;
+            padding: 0 0 30px 20px;
+            border-bottom: 1px solid #e6e6e6;
+        }
+        .form {
+            padding: 40px 20px;
+            border-bottom: 1px solid #e6e6e6;
+        }
+        .row {
+            margin-bottom: 20px;
+        }
+        .label {
+            display: inline-block;
+            width: 60px;
+            font-size: 14px;
+        }
+        .ipt {
+            display: inline-block;
+            box-sizing: border-box;
+            width: 240px;
+            height: 40px;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid #e6e6e6;
+        }
+        .autologin {
+            margin: 30px 0;
+            text-align: right;
+            font-size: 14px;
+            .checkbox {
+                margin: 0 -4px -2px 15px;
+                width: 20px;
+                height: 20px;
+                vertical-align: bottom;
+            }
+        }
+        .btn {
+            display: inline-block;
+            width: 140px;
+            height: 40px;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 40px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 3px;
+            border: 1px solid #f76d02;
+            color: #f76d02;
+        }
+        .fill {
+            margin-right: 20px;
+            background-color: #f76d02;
+            color: #fff;
+        }
+        .sign {
+            margin: 25px 20px 0 0;
+            text-align: right;
+            font-size: 14px;
+            line-height: 30px;
+            .img {
+                margin-left: 20px;
+                vertical-align: bottom;
+            }
+        }
+    }
+}
