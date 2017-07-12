@@ -3,22 +3,17 @@
     font-size: 14px;
     .links {
         margin: 0 auto;
-        width: 560px;
-        padding: 50px 0;
-        ul {
-            overflow: hidden;
-            li {
-                float: left;
-                width: 70px;
-            }
-            a {
-                display: block;
-                margin-right: -1px;
-                line-height: 1;
-                text-align: center;
-                border-right: 1px dashed #fff;
-                color: #fff;
-            }
+        width: 850px;
+        padding: 10px;
+        overflow: hidden;
+        font-size: 0;
+        .ifo {
+            float: right;
+            margin-left: 80px;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            line-height: 50px;
         }
     }
     .copyright {
