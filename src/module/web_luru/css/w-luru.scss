@@ -42,6 +42,10 @@
                 width: 400/$tr;
                 height: 60/$tr;
                 input, select {
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
                     padding: 0 30/$tr;
                     width: 340/$tr;
                     height: 60/$tr;
@@ -59,7 +63,7 @@
                     position: absolute;
                     top: 50%;
                     right: 26/$tr;
-                    transform: translateY(0%);
+                    transform: translateY(-50%);
                     width: 33/$tr;
                 }
             }
