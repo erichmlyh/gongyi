@@ -40,7 +40,7 @@ exports.cssLoaders = function (options) {
     postcss: generateLoaders(['css']),
     less: generateLoaders(['css', 'less']),
     sass: generateLoaders(['css', 'sass?indentedSyntax']),
-    scss: generateLoaders(['css', 'sass']),
+    scss: generateLoaders(['css', 'sass', 'autoprefixer?{browsers:["last 5 iOS versions","last 5 Android versions","last 5 ExplorerMobile versions","last 5 ChromeAndroid versions","last 5 UCAndroid versions","last 5 FirefoxAndroid versions","last 5 OperaMobile versions","last 5 OperaMini versions","last 5 Samsung versions","last 3 Chrome versions","last 3 Firefox versions","last 3 Safari versions","last 3 Edge versions",]}']),
     stylus: generateLoaders(['css', 'stylus']),
     styl: generateLoaders(['css', 'stylus'])
   }
