@@ -4,3 +4,5 @@ import "css/w-trianglebg.scss";
 import "css/w-banner.scss";
 
 import "./css/w-login.scss";
+
+import "common/js/validate.js";
