@@ -4,3 +4,6 @@ import "css/w-trianglebg.scss";
 import "css/w-banner.scss";
 
 import "./css/w-baoming.scss";
+
+import "common/js/validate.js";
+

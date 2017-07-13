@@ -46,16 +46,17 @@
         <form action="#" class="form">
             <div class="wrapper">
                 <img src="./images/phone.png" alt="">
-                <input type="text" class="phone" placeholder="手机号">
+                <input type="text" class="phone" placeholder="手机号/邮箱" name="zh" data-reg="require" data-msg="请输入用户名">
             </div>
             <div class="wrapper">
                 <img src="./images/lock.png" alt="">
-                <input type="password" class="password" placeholder="密码">
+                <input type="password" class="password" placeholder="密码" name="password" data-reg="require" data-msg="请输入密码">
             </div>
             <button class="login btn btn-main" type="submit">登陆</button>
-            <a class="reg btn" href="javascript: void 0;">注册</a>
+            <a class="reg btn" href="./register.html">注册</a>
         </form>
     </section>
+    <script src="../static/js/zepto.js"></script>
 </body>
 
 </html>

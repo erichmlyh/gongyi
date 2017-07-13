@@ -9,7 +9,7 @@
         height: 106/$tr;
     }
     .info {
-         margin: 0 250/$tr 64/$tr 250/$tr;
+         margin: 0 220/$tr 64/$tr 220/$tr;
          .item {
              display: flex;
              flex-flow: row nowrap;
@@ -57,5 +57,10 @@
         background-image: url("../images/btn.png");
         background-position: center;
         background-size: 100%;
+    }
+    &:after {
+        content: "";
+        display: block;
+        height: 70/$tr;
     }
 }
