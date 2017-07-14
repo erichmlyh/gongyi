@@ -1,0 +1,109 @@
+.m-proboard {
+    background-color: #fff;
+    padding: 30px 0;
+    .tabs {
+        margin: 0 auto;
+        margin-bottom: 35px;
+        width: 1120px;
+        text-align: center;
+        .tit {
+            position: relative;
+            font-size: 24px;
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -10px;
+                width: 40px;
+                height: 2px;
+                background-color: #ea5300;
+            }
+        }
+        .cur {
+            color: #ea5300;
+        }
+    }
+    .name-wrapper {
+        width: 1060px;
+        height: 76px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        .left {
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 18px;
+            color: #fff;
+            background-color: rgb(195, 168, 116);
+        }
+        .right {
+
+        }
+    }
+    .lst {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        width: 1120px;
+        .itm {
+            width: 250px;
+            border: 1px solid #e6e6e6;
+            .ifo {
+                padding: 0 20px 20px;
+            }
+            img {
+                width: 100%;
+            }
+            .tit {
+                margin: 10px 0;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .time {
+                margin-bottom: 10px;
+                font-size: 14px;
+                opacity: 0.5;
+            }
+            .dtl {
+                margin-bottom: 10px;
+                font-size: 14px;
+                opacity: 0.8;
+            }
+            .btn {
+                display: block;
+                margin: 0 auto;
+                width: 120px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 20px;
+                background-color: #f76d02;
+                color: #fff;
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+    }
+    .more {
+        display: block;
+        width: 120px;
+        margin: 30px auto;
+        text-align: center;
+        text-decoration: underline;
+        font-size: 18px;
+        color: #fff;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 20px;
+        background-color: #c4c4c4;
+    }
+}
+.bg-grey {
+    background-color: #f5f5f5;
+}

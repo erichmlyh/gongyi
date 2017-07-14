@@ -1,0 +1,21 @@
+.m-container {
+    width: 1120px;
+    margin: 0 auto;
+    .nav {
+        margin-top: -20px;
+        line-height: 30px;
+    }
+    .main {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        background-color: #fff;
+        .content {
+            width: 770px;
+        }
+        .sider {
+            margin-left: 30px;
+            width: 350px;
+        }
+    }
+}
