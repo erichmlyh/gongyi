@@ -1,9 +1,11 @@
 .m-activity {
     padding: 0 10px 20px;
     border-bottom: 1px solid #e7e7e7;
-    img {
-        width: 760px;
-        height: 240px;
+    .top {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
     }
     .tit {
         margin: 15px 0;
@@ -27,7 +29,6 @@
         height: 40px;
         line-height: 40px;
         text-align: center;
-        margin-right: 20px;
         font-size: 18px;
         border-radius: 3px;
         border: 1px solid #f76d02;
@@ -36,5 +37,11 @@
     .fill {
         background-color: #f76d02;
         color: #fff;
+        margin-right: 20px;
+    }
+    .abstract {
+        margin-bottom: 25px;
+        padding: 25px;
+        background-color: #f5f5f5;
     }
 }
