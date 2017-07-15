@@ -1,0 +1,35 @@
+.m-message {
+    padding: 0 60px;
+    .tit {
+        margin-top: 30px;
+        height: 60px;
+        line-height: 60px;
+        color: #333;
+        font-size: 24px;
+        border-bottom: 1px solid #eaeaea;
+    }
+    .news {
+        .each-news {
+            border-bottom: 1px solid #eaeaea;
+            .title {
+                height: 70px;
+                line-height: 70px;
+                font-size: 18px;
+                color: #333;
+            }
+            .content {
+                font-size: 18px;
+                color: #333;
+                margin-bottom: 20px;
+            }
+            .more {
+                display: block;
+                font-size: 14px;
+                color: #4f8bbf;
+                text-align: right;
+                text-decoration: underline;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
