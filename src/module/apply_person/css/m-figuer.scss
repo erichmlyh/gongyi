@@ -1,0 +1,96 @@
+.figuer {
+    position: relative;
+    height: 330px;
+    .apply, .check, .pass {
+        position: absolute;
+        bottom: 40px;
+        width: 170px;
+        height: 270px;
+        .icon {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 160px;
+            height: 172px;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .dot {
+            position: relative;
+            left: 50%;
+            bottom: -15px;
+            transform: translateX(-50%);
+            width: 18px;
+            height: 18px;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border: 2px solid rgb(204, 204, 204);
+        }
+        .text {
+            position: relative;
+            bottom: -40px;
+            text-align: center;
+            font-size: 24px;
+            color: #999;
+        }
+    }
+    .apply.active, .check.active, .pass.active {
+        .dot {
+            border: none;
+            background-color: rgb(247, 109, 2);
+        }
+        .text {
+            color: #f98700;
+        }
+    }
+    .apply, .check {
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 170px;
+            top: 190px;
+            width: 180px;
+            height: 12px;
+            background-image: url("../images/arrow.png");
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+    .apply {
+        left: 120px;
+        .icon {
+            background-image: url("../images/apply_dis.png");
+        }
+    }
+    .check {
+        left: 50%;
+        transform: translateX(-50%);
+        .icon {
+            background-image: url("../images/check_dis.png");
+        }
+    }
+    .pass {
+        right: 120px;
+        .icon {
+            background-image: url("../images/pass_dis.png");
+        }
+    }
+    .apply.active {
+        .icon {
+            background-image: url("../images/apply.png");
+        }
+    }
+    .check.active {
+        .icon {
+            background-image: url("../images/check.png");
+        }
+    }
+    .pass.active {
+        .icon {
+            background-image: url("../images/pass.png");
+        }
+    }
+}
