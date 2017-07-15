@@ -3,7 +3,9 @@
     .logo {
         margin-bottom: 30px;
         img {
-            width: 70px;
+            display: block;
+            width: 159px;
+            margin: 0 auto;
         }
         .tip {
             margin: 60px 0 0 20px;
@@ -15,7 +17,20 @@
         font-size: 18px;
         text-indent: 35px;
         p {
+            color: #333;
             margin-bottom: 60px;
+        }
+    }
+    .parallel {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        .item {
+            flex: 0 0 20%;
+            text-align: center;
+            font-size: 14px;
+            color: #333;
         }
     }
     .pic {
