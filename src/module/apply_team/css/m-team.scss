@@ -4,6 +4,7 @@
 .card {
     width: 1120px;
     margin: 0 auto;
+    padding-bottom: 50px;
     border-bottom: 1px solid #eaeaea;
     .title {
         position: relative;
@@ -25,5 +26,99 @@
             height: 2px;
             background-color: rgb(234, 83, 0);
         }
+    }
+    .fill {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+
+        width: 400px;
+        height: 50px;
+        margin: 0 auto;
+        &.spilt {
+            margin-top: 30px;
+        }
+        .name {
+            flex: 0 0 auto;
+            width: 100px;
+            color: #999;
+            font-size: 14px;
+        }
+        .ipt {
+            flex: 0 0 auto;
+            display: block;
+            width: 240px;
+            height: 30px;
+            padding: 0 20px;
+            border: 2px solid rgb(204, 204, 204);
+            border-radius: 3px;
+            color: #333;
+            font-size: 14px;
+        }
+        .require {
+            margin-left: 5px;
+            color: #cc374b;
+        }
+    }
+    .show {
+        width: 420px;
+        height: 40px;
+        margin: 0 auto 20px auto;
+        line-height: 40px;
+        border-radius: 3px;
+        border: 2px solid rgb(204, 204, 204);
+        font-size: 14px;
+        color: #ccc;
+        text-align: center;
+    }
+    .upload {
+        position: relative;
+        display: block;
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 auto;
+        background-color: #f76d02;
+        border-radius: 4px;
+        padding: 4px 12px;
+        overflow: hidden;
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none;
+        text-indent: 0;
+        text-align: center;
+        input {
+            position: absolute;
+            right: 0;
+            top: 0;
+            opacity: 0;
+        }
+    }
+    .save {
+        outline: none;
+        -webkit-appearance: none;
+        border-radius: 0; 
+        border-top-style: none;
+        border-right-style: none;
+        border-bottom-style: none;
+        border-left-style: none;
+        border-radius: 3px;
+
+        display: block;
+        margin: 40px auto 5px auto;
+        width: 180px;
+        height: 60px;
+        padding: 0;
+        line-height: 60px;
+        text-align: center;
+        color: #fff;
+        font-size: 24px;
+        background-color: #f76d02;
+    }
+    .tip {
+        font-size: 14px;
+        color: #ccc;
+        text-align: center;
     }
 }
