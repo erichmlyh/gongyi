@@ -1,21 +1,33 @@
 .m-corps {
     margin: 60px 40px 60px 60px;
     .persons {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
+        margin-top: 60px;
     }
     .itm {
-        margin: 0 30px 30px 0;
-        width: 180px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 60px;
         img {
+            flex: 0 0 auto;
             display: block;
-            width: 100%;
+            width: 185px;
+            height: 124px;
             border-radius: 5px;
         }
-        .name {
-            margin-top: 20px;
-            text-align: center;
+        .detail {
+            align-self: flex-start;
+            .name {
+                margin: 10px;
+                font-size: 18px;
+                color: #333;
+            }
+            .content {
+                margin-left: 10px;
+                font-size: 14px;
+                color: #333;
+            }
         }
     }
 }
