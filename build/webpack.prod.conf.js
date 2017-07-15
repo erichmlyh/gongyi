@@ -95,7 +95,7 @@ function getEntry(globPath) {
   }
   globPath.forEach((itemPath) => {
     glob.sync(itemPath).forEach(function (entry) {
-      var prefix = "web";
+      var prefix = "";
       if (prefix && entry.indexOf("/" + prefix) == -1) {
         return;
       }
