@@ -24,12 +24,17 @@
                 color: #333;
                 text-align: right;
              }
-             input {
+             input, select {
                 flex: 1 1 auto;
                 margin: 0 30/$tr 30/$tr 30/$tr;
                 height: 72/$tr;
+                background-color: #fff;
                 border: 3/$tr solid rgb(204, 204, 204);
                 border-radius: 6/$tr;
+                appearance: none;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                outline: none;
              }
              .require {
                 flex: 0 0 auto;

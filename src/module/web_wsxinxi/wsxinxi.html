@@ -45,14 +45,21 @@
         <img class="title" src="./images/wsxx.png" alt="">
         
         <form action="#" class="info">
+            
             <div class="item">
                 <p class="left">省份：</p>
-                <input class="ipt" type="text" name="sf" data-reg="require" data-msg="请输入省份">
+                <select class="sel g-select province" name="sf" data-reg="require" data-msg="请输入省份">
+                    <option value="北京" data-idx="0">北京</option>
+                    <option value="北京" data-idx="0">南京</option>
+                </select>
                 <p class="require">*</p>
             </div>
             <div class="item">
                 <p class="left">城市：</p>
-                <input class="ipt" type="text" name="cs" data-reg="require" data-msg="请输入城市">
+                <select class="sel g-select city" name="cs" data-reg="require" data-msg="请输入城市">
+                    <option value="北京" data-idx="0">北京</option>
+                    <option value="北京" data-idx="0">南京</option>
+                </select>
                 <p class="require">*</p>
             </div>
             <div class="item">
@@ -94,5 +101,6 @@
         </form>
     </section>
     <script src="../static/js/zepto.js"></script>
+    <script src="../static/js/citys.js"></script>
 </body>
 </html>
