@@ -95,6 +95,10 @@ function getEntry(globPath) {
   }
   globPath.forEach((itemPath) => {
     glob.sync(itemPath).forEach(function (entry) {
+      var prefix = "web";
+      if (prefix && entry.indexOf("/" + prefix) == -1) {
+        return;
+      }
       basename = path.basename(entry, path.extname(entry));
       if (entry.split('/').length > 4) {
         tmp = entry.split('/').splice(-3);
