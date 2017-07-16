@@ -50,9 +50,14 @@ chart.on('click', function (params) {
         dataType: "json",
         success: function(data){
             console.log(data);
+            window.data = data;
+            data = data && data.data || {};
+            if (data.html) {
+                $(".J-partner").html(data.html);
+            }
+            console.log(data);
         },
         error: function() {
-            alert(url + " is wrong");
         }
     })
 });
