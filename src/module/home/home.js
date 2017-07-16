@@ -8,14 +8,27 @@ import "css/m-ads.scss";
 
 import "./css/m-banner.scss";
 
-var swiper = new Swiper('.swiper-container', {
-        // pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        paginationClickable: true,
-        spaceBetween: 0,
-        centeredSlides: true,
-        autoplay: 2500,
-        autoplayDisableOnInteraction: false,
-        loop: true
-    });
+// 头图轮播
+new Swiper('.J-banner', {
+    // pagination: '.swiper-pagination',
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    paginationClickable: true,
+    spaceBetween: 0,
+    centeredSlides: true,
+    autoplay: 2500,
+    autoplayDisableOnInteraction: false,
+    loop: true
+});
+
+// 新闻轮播
+new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    autoplay: 2500,
+    autoplayDisableOnInteraction: false,
+    loop: true,
+    // paginationBulletRender: function (swiper, index, className) {
+    //     return '<span class="' + className + '">' + (index + 1) + '</span>';
+    // }
+});
