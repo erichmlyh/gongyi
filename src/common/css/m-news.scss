@@ -40,6 +40,9 @@
                 background-color: rgba(0, 0, 0, 0.6);
                 color: #fff;
                 font-size: 14px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 .l {
                     margin-left: 20px;
                 }
@@ -47,7 +50,7 @@
                     margin-right: 20px;
                 }
                 .em {
-                    background-color: #f98700;
+                    background-color: #4d99cb;
                     margin-right: 6px;
                     padding: 0 6px;
                 }

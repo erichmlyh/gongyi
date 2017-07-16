@@ -18,29 +18,53 @@
             width: 510px;
             .title {
                 display: flex;
+                flex-flow: row nowrap;
                 justify-content: space-between;
-                border-left: 2px solid #fff;
-                margin-bottom: 50px;
+                align-items: center;
+                margin-bottom: 30px;
                 .tit {
+                    height: 24px;
                     padding-left: 10px;
                     line-height: 1;
                     font-size: 24px;
+                    border-left: 2px solid #fff;
                 }
                 .more {
-                    color: #fff;
-                    opacity: 0.5;
-                    font-size: 14px;
-                    text-decoration: underline;
+                    display: inline-block;
+                    width: 150px;
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: center;
+                    background-color: #fff;
+                    border-radius: 3px;
+                    font-size: 18px;
+                    color: #f76d02;
                 }
             }
             .tip {
                 font-size: 14px;
-                margin-bottom: 50px;
+                margin-bottom: 20px;
             }
-            .icon {
-                width: 60px;
-                margin-right: 45px;
+            .icons {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+                align-items: center;
+                div {
+                    width: 60px;
+                    height: 90px;
+                    margin-right: 70px;
+                }
+                
+                .icon {
+                    width: 60px;
+                    margin-right: 45px;
+                }
+                .sm {
+                    text-align: center;
+                }
             }
+            
         }
 
     }

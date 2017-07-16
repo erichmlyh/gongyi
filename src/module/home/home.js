@@ -32,3 +32,16 @@ new Swiper('.swiper-container', {
     //     return '<span class="' + className + '">' + (index + 1) + '</span>';
     // }
 });
+
+// 社团风采和优秀案例切换
+$("#anli").hide();
+$(".m-proboard").find(".tabs").on("click", ".tit", function(e){
+        var $this = $(this);
+        var me = $this.data("me");
+        var all = $this.data("all");
+
+        $(".m-proboard").find(".J-tit").removeClass("cur");
+        $this.addClass("cur");
+        $("." + all).hide();
+        $("#" + me).show();
+    });
