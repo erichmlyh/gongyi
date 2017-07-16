@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>主页</title>
+    <link rel="stylesheet" href="../static/css/swiper.css">
 </head>
 
 <body>
@@ -34,7 +35,33 @@
             </div>
         </div>
     </div>
-    <div class="m-banner"></div>
+    <div class="m-banner swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                 <img src="./images/banner1.jpg" alt=""> 
+            </div>
+            <div class="swiper-slide">
+                 <img src="./images/banner1.jpg" alt=""> 
+            </div>
+            <div class="swiper-slide">
+                 <img src="./images/banner1.jpg" alt=""> 
+            </div>
+            <div class="swiper-slide">
+                 <img src="./images/banner1.jpg" alt=""> 
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="intro">
+            <div class="wrapper">
+                <p class="content">项目自2013年启动以来，支持全国190所高校292个社团参与活动。</p>
+                <a href="javascript: void 0;" class="to-apply">查看详情>></a>
+            </div>
+        </div>
+    </div>
     <div class="m-intro">
         <ul class="ito">
             <li class="itm">
@@ -84,20 +111,46 @@
             </div>
             <ul class="lst">
                 <li class="itm">
-                    <span>爱佑未来慈善基金会携手众星照亮困境儿</span>
-                    <span class="time">2017-5-1</span>
+                    <a href="javascript:void 0;" class="each-news">
+                        <span>爱佑未来慈善基金会携手众星照亮困境儿</span>
+                        <span class="time">2017-5-1</span>
+                    </a>
                 </li>
                 <li class="itm">
-                    <span>社会创新国际论坛在京召开</span>
-                    <span class="time">2017-4-29</span>
+                    <a href="javascript:void 0;" class="each-news">
+                        <span>社会创新国际论坛在京召开</span>
+                        <span class="time">2017-4-29</span>
+                    </a>
                 </li>
                 <li class="itm">
-                    <span>BHG Mall积极践行公益事业 树立企业社</span>
-                    <span class="time">2017-2-30</span>
+                    <a href="javascript:void 0;" class="each-news">
+                        <span>BHG Mall积极践行公益事业 树立企业社</span>
+                        <span class="time">2017-2-30</span>
+                    </a>
                 </li>
                 <li class="itm">
-                    <span>绿色和平首发“中国原始森林空间分布图</span>
-                    <span class="time">2017-2-18</span>
+                    <a href="javascript:void 0;" class="each-news">
+                        <span>绿色和平首发“中国原始森林空间分布图</span>
+                        <span class="time">2017-2-18</span>
+                    </a>
+                </li>
+                <li class="itm">
+                    <a href="javascript:void 0;" class="each-news">
+                        <span>社会创新国际论坛在京召开</span>
+                        <span class="time">2017-4-29</span>
+                    </a>
+                </li>
+                <li class="itm">
+                    <a href="javascript:void 0;" class="each-news">
+                        <span>BHG Mall积极践行公益事业 树立企业社</span>
+                        <span class="time">2017-2-30</span>
+                    </a>
+                </li>
+                <li class="itm">
+                    <a href="javascript:void 0;" class="each-news">
+                        <span>绿色和平首发“中国原始森林空间分布图</span>
+                        <span class="time">2017-2-18</span>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -107,6 +160,22 @@
                 <span><a class="more" href="/xx/xx">more>></a></span>
             </div>
             <ul class="lst">
+                <li class="itm">
+                    <img src="./images/newsb.jpg" alt="">
+                    <div class="ifo">
+                        <p class="tit">先心儿童的“心”生</p>
+                        <p class="intro">夏洲在爱佑童心项目资助下，接受手术并顺利出院。</p>
+                        <a href="/xx/xx" class="btn">详情</a>
+                    </div>
+                </li>
+                <li class="itm">
+                    <img src="./images/newsb.jpg" alt="">
+                    <div class="ifo">
+                        <p class="tit">先心儿童的“心”生</p>
+                        <p class="intro">夏洲在爱佑童心项目资助下，接受手术并顺利出院。</p>
+                        <a href="/xx/xx" class="btn">详情</a>
+                    </div>
+                </li>
                 <li class="itm">
                     <img src="./images/newsb.jpg" alt="">
                     <div class="ifo">
@@ -277,6 +346,7 @@
         <p class="copyright">版权所有 Copyright 2012 中国扶贫基金会 保留所有权利</p>
     </div>
     <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/swiper.js"></script>
 </body>
 
 </html>

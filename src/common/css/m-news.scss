@@ -14,7 +14,7 @@
             color: #333;
         }
         .more {
-            padding-right: 100px;
+            // padding-right: 100px;
             font-size: 14px;
             color: rgba(0, 0, 0, 0.5);
             text-decoration: underline;
@@ -71,15 +71,22 @@
 
         }
         .lst {
-            margin: 15px 10px 0;
+            margin: 15px 0 0;
             ul, li {
-                list-style: disc;
+                // list-style: disc;
             }
             .itm {
-                display: flex;
-                justify-content: space-between;
-                line-height: 28px;
-                font-size: 14px;
+                .each-news {
+                    display: flex;
+                    justify-content: space-between;
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 14px;
+                    padding: 0 10px;
+                    &:hover {
+                        background-color: #fff;
+                    }
+                }
             }
             .time {
                 color: rgba(0, 0, 0, 0.5);
