@@ -22,7 +22,7 @@ new Swiper('.J-banner', {
 });
 
 // 新闻轮播
-new Swiper('.swiper-container', {
+new Swiper('.J-news', {
     pagination: '.swiper-pagination',
     paginationClickable: true,
     autoplay: 2500,
@@ -33,15 +33,43 @@ new Swiper('.swiper-container', {
     // }
 });
 
+// 合作企业，爱心媒体，爱心大使
+[".J-hzqy", ".J-axmt", ".J-axds"].forEach(function(className){
+    new Swiper(className, {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 5,
+        // centeredSlides: true,
+        paginationClickable: true,
+        spaceBetween: 20,
+    });
+})
+
 // 社团风采和优秀案例切换
 $("#anli").hide();
 $(".m-proboard").find(".tabs").on("click", ".tit", function(e){
-        var $this = $(this);
-        var me = $this.data("me");
-        var all = $this.data("all");
+    var $this = $(this);
+    var me = $this.data("me");
+    var all = $this.data("all");
 
-        $(".m-proboard").find(".J-tit").removeClass("cur");
-        $this.addClass("cur");
-        $("." + all).hide();
-        $("#" + me).show();
-    });
+    $(".m-proboard").find(".J-tit").removeClass("cur");
+    $this.addClass("cur");
+    $("." + all).hide();
+    $("#" + me).show();
+});
+
+// 合作企业，爱心媒体，爱心大使切换
+$(".J-axmt").hide();
+$(".J-axds").hide();
+$(".m-ads").find(".tabs").on("click", ".tit", function(e){
+    var $this = $(this);
+    var me = $this.data("me");
+    var all = $this.data("all");
+
+    $(".m-ads").find(".J-ads-tab").removeClass("cur");
+    $this.addClass("cur");
+    $("." + all).hide();
+    $("." + me).show();
+});
+
+
