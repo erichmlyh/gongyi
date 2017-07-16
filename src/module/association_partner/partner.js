@@ -18,10 +18,22 @@ var option = {
             // selectedMode : 'multiple',
             label: {
                 normal: {
+                    textStyle: {
+                        fontSize: 16
+                    },
                     show: true
                 },
                 emphasis: {
+                    textStyle: {
+                        fontSize: 16
+                    },
                     show: true
+                }
+            },
+            itemStyle: {
+                emphasis: {
+                    borderWidth: .5,
+                    areaColor:"#f76d02",
                 }
             },
         }
