@@ -24,6 +24,39 @@ var devMiddleware = require('webpack-dev-middleware')(compiler, {
   }
 })
 
+// mock 数据
+var mockPath = path.join(__dirname, "../src/mock");
+app.get('/mock/*', function (req, res) {
+    var path = mockPath + req.originalUrl.split("?")[0].slice(5),
+        query = (function () {
+                var url = req.originalUrl.split("?")[1] || "";
+                var theRequest = {};
+                var strs = url.split("&");
+                for(var i = 0; i < strs.length; i ++) {
+                    var temp = decodeURIComponent(strs[i]);
+                    var index = temp.indexOf('=');
+                    theRequest[temp.substr(0, index)] = temp.substr(index + 1);
+                }
+                return theRequest;
+            })();
+
+    var api = require(path);
+    var ret = "";
+    var type = Object.prototype.toString.call(api);
+    if(type == "[object Function]") {
+        ret = JSON.stringify(api(query));
+    } else if(type == "[object Object]") {
+        ret = JSON.stringify(api);
+    } else {
+        ret = api.toString();
+    }
+    if (query.callback) {
+        ret = query.callback + "(" + ret + ")"
+    }
+    delete require.cache[require.resolve(path)]; // 清除node的require缓存
+    res.send(ret);
+});
+  
 var hotMiddleware = require('webpack-hot-middleware')(compiler)
 // force page reload when html-webpack-plugin template changes
 compiler.plugin('compilation', function (compilation) {

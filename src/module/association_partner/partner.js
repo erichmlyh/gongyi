@@ -43,4 +43,16 @@ chart.setOption(option);
 chart.on('click', function (params) {
     var city = params.name;
     console.log(city);
+
+    $.ajax({
+        url: "../mock/partner.js",
+        type: "GET",
+        dataType: "json",
+        success: function(data){
+            console.log(data);
+        },
+        error: function() {
+            alert(url + " is wrong");
+        }
+    })
 });
