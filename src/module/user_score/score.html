@@ -52,21 +52,20 @@
                     <div class="rows">
                         <div class="col">
                             <span>名称</span>
-                            <input class="ipt" type="text" name="title" placeholder="项目名称">
+                            <input id="name" class="ipt" type="text" name="title" placeholder="项目名称">
                         </div>
                         <div class="col">
                             <span>类型</span>
-                            <select class="select" name="year">
+                            <select id="type" class="select" name="year">
                                 <option value="个人">个人</option>
-                                <option value="个人">个人</option>
-                                <option value="个人">个人</option>
+                                <option value="团队">团队</option>
                             </select>
                         </div>
                         <div class="col">
                             <span>劝募日期</span>
-                            <input class="ipt" type="text" name="title" placeholder="2017-06-07">
+                            <input id="date" class="ipt" type="text" name="title" placeholder="2017-06-07">
                         </div>
-                        <a href="javascript:;" class="btn">搜索</a>
+                        <a href="javascript:;" class="btn" id="search">搜索</a>
                     </div>
                 </form>
                 <div class="m-table">
@@ -79,7 +78,7 @@
                                 <th>捐赠金额</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="html-container" data-url="../mock/user_score.js">
                             <tr>
                                 <td>爱心一帮一</td>
                                 <td>北京交通大学</td>
