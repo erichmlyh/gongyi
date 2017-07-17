@@ -29,14 +29,22 @@
             text-align: right;
             opacity: 0.5;
         }
-        .ipt {
+        .sel,.ipt {
             margin-right: 10px;
             padding-left: 10px;
             width: 230px;
             height: 40px;
             line-height: 40px;
+            background-color: #fff;
             border-radius: 5px;
             border: 1px solid #ccc;
+        }
+        .sel {
+            width: 240px;
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            outline: none;
         }
         .btnbox {
             padding: 20px 250px 0 0;

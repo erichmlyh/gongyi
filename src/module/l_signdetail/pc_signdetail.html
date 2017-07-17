@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/layui.css">
     <title>注册</title>
 </head>
 
@@ -39,11 +40,19 @@
             <h2 class="tit">注册</h2>
             <div class="row">
                 <span class="label">省份：</span>
-                <input type="text" class="ipt" placeholder="北京" name="province"><span class="red">*</span>
+                <select class="sel g-select province" name="sf" data-reg="require" data-msg="请输入省份">
+                    <option value="北京" data-idx="0">北京</option>
+                </select>
+                 <!-- <input type="text" class="ipt" placeholder="北京" name="province"> -->
+                 <span class="red">*</span> 
             </div>
             <div class="row">
                 <span class="label">城市：</span>
-                <input type="text" class="ipt" placeholder="北京" name="city"><span class="red">*</span>
+                <select class="sel g-select city" name="cs" data-reg="require" data-msg="请输入城市">
+                    <option value="北京" data-idx="0">北京</option>
+                </select>
+                <!-- <input type="text" class="ipt" placeholder="北京" name="city"> -->
+                <span class="red">*</span>
             </div>
             <div class="row">
                 <span class="label">姓名：</span>
@@ -74,7 +83,7 @@
                 <input type="text" class="ipt" placeholder="4234255435" name="QQ">
             </div>
             <div class="btnbox">
-                <button type="submit" class="btn">下一步</buttpm>
+                <button type="submit" class="btn">保存并提交</buttpm>
             </div>
         </form>
     </div>
@@ -89,6 +98,8 @@
         <p class="copyright">版权所有 Copyright 2012 中国扶贫基金会 保留所有权利</p>
     </div>
     <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/citys.js"></script>
+    <script src="../static/layui.all.js"></script>
 </body>
 
 </html>
