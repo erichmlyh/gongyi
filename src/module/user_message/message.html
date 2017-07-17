@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/layui.css">
     <title>关于我们-我的消息</title>
 </head>
 
@@ -25,7 +26,7 @@
                 </div>
                 <ul class="nav">
                     <li><a href="home.html">首页</a></li>
-                    <li><a href="projectReport.html">关于我们</a></li>
+                    <li><a href="projectIntro.html">关于我们</a></li>
                     <li><a href="apply.html">项目申请</a></li>
                     <li><a href="sx100.html">善行100</a></li>
                     <li><a href="partner.html">伙伴社团</a></li>
@@ -47,7 +48,7 @@
         </ul>
         <div class="container m-message">
             <p class="tit">我的消息</p>
-            <ul class="news">
+            <ul id="html-container" data-url="../mock/user_message.js" data-page="23" class="news">
                 <li class="each-news">
                     <p class="title">站内公告1</p>
                     <p class="content">【华为宣布荣耀9将限时独占《刺客信条：大革命》手游6个月】华为荣耀手机的法国官推近日发推表示，《刺客信条：大革命》手游将在荣耀9手机上限时独占6个月，IGN法国也对此消息做出了报道，但目前尚不清楚这款手游的具体发售日。</p>
@@ -69,7 +70,8 @@
                     <a href="javascript: void 0;" class="more">查看详情>></a>
                 </li>
             </ul>
-            <div class="fenye" style="margin: 40px;">当前第1页，上一页 下一页 共2页</div>
+            <div id="J-pagenation"></div>
+             <!-- <div class="fenye" style="margin: 40px;">当前第1页，上一页 下一页 共2页</div>  -->
         </div>
     </div>
     <div class="m-footer">
@@ -83,6 +85,7 @@
         <p class="copyright">版权所有 Copyright 2012 中国扶贫基金会 保留所有权利</p>
     </div>
     <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/layui.all.js"></script>
 </body>
 
 </html>
