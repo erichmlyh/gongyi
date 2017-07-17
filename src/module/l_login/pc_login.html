@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="../static/css/layui.css">  
     <title>登录</title>
 </head>
 
@@ -41,19 +42,19 @@
             <form action="" class="form">
                 <div class="row">
                     <span class="label">账户：</span>
-                    <input type="text" class="ipt" name="account">
+                    <input type="text" class="ipt" name="account" data-reg="require" data-msg="请输入帐号">
                 </div>
                 <div class="row">
                     <span class="label">密码：</span>
-                    <input type="password" class="ipt" name="password">
+                    <input type="password" class="ipt" name="password" data-reg="require" data-msg="请输入密码">
                 </div>
                 <div class="autologin">
                     <span>下次自动登录</span>
-                    <input type="checkbox" class="checkbox">
+                    <input type="checkbox" class="checkbox" name="autologin">
                 </div>
                 <div class="btnbox">
                     <button href="/xxx/xx" class="btn fill">个人登录</button>
-                    <a href="/xxx/xx" class="btn">团队登录</a>
+                    <a href="javascript: void 0;" class="btn">团队登录</a>
                 </div>
             </form>
             <div class="sign">
@@ -73,6 +74,7 @@
         <p class="copyright">版权所有 Copyright 2012 中国扶贫基金会 保留所有权利</p>
     </div>
     <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/layui.all.js"></script> 
 </body>
 
 </html>
