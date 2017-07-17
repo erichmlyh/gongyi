@@ -9,13 +9,17 @@
         line-height: 30px;
         font-size: 14px;
         color: #333;
+        p {
+            opacity: 0.6;
+        }
         .nav {
             li {
                 float: left;
                 margin-left: 70px;
             }
             a {
-                color: #666;
+                color: #333;
+                opacity: 0.6;
             }
         }
     }
@@ -31,7 +35,7 @@
             margin-top: 15px;
         }
         .logotit {
-            margin:0 0 10px 20px;
+            margin:0 0 5px 20px;
         }
         .nav {
             margin: 10px 0;

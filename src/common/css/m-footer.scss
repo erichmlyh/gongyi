@@ -15,6 +15,13 @@
             font-size: 14px;
             line-height: 50px;
         }
+        p {
+            text-align: left;
+        }
+        .space {
+            display: inline-block;
+            width: 70px;
+        }
     }
     .copyright {
         line-height: 80px;
