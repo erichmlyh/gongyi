@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/layui.css">
     <title>关于我们-基本信息</title>
 </head>
 
@@ -46,16 +47,16 @@
             <li><a href="message.html">我的消息</a></li>
         </ul>
         <div class="container">
-            <div class="m-tb">
+            <div id="info-disable" class="m-tb">
                 <h2 class="tit">基本信息</h2>
-                <form class="m-forme">
+                <div class="m-forme">
                     <div class="row">
                         <span class="label">省份</span>
-                        <span>北京</span>
+                        <span>河北省</span>
                     </div>
                     <div class="row">
                         <span class="label">城市</span>
-                        <span>北京</span>
+                        <span>邯郸市</span>
                     </div>
                     <div class="row">
                         <span class="label">学校</span>
@@ -82,7 +83,52 @@
                         <span>4234324</span>
                     </div>
                     <div class="btnbox">
-                        <a href="javascript:;" class="btn">修改</a>
+                         <a href="javascript:;" class="btn btn-edit">修改</a> 
+                        <!-- <button type="submit" class="btn">修改</button> -->
+                    </div>
+                </div>
+            </div>
+            <div id="info-edit" class="m-tb edit">
+                <h2 class="tit">基本信息</h2>
+                <form class="m-forme" action="#">
+                    <div class="row">
+                        <span class="label">省份</span>
+                        <select data-value="河北省" class="sel g-select province" name="sf" data-reg="require" data-msg="请输入省份">
+                        </select>
+                    </div>
+                    <div class="row">
+                        <span class="label">城市</span>
+                        <select data-value="邯郸市" class="sel g-select city" name="cs" data-reg="require" data-msg="请输入城市">
+                        </select>
+                    </div>
+                    <div class="row">
+                        <span class="label">学校</span>
+                        <input type="text" name="xx" value="北京交通大学" class="ipt" data-reg="require" data-msg="请输入学校">
+                    </div>
+                    <div class="row">
+                        <span class="label">年级</span>
+                        <input type="text" name="lj" value="大二" class="ipt" data-reg="require" data-msg="请输入年级">
+                    </div>
+                    <div class="row">
+                        <span class="label">专业</span>
+                        <input type="text" name="zy" value="工商管理" class="ipt" data-reg="require" data-msg="请输入专业">
+                    </div>
+                    <div class="row">
+                        <span class="label">联系方式</span>
+                        <input type="text" name="lxfs" value="12332434" class="ipt" data-reg="require" data-msg="请输入联系方式">
+                    </div>
+                    <div class="row">
+                        <span class="label">邮箱</span>
+                        <input type="text" name="yx" value="mfdsaf@fdsa.com" class="ipt" data-reg="require" data-msg="请输入邮箱">
+                    </div>
+                    <div class="row">
+                        <span class="label">QQ</span>
+                        <span></span>
+                        <input type="text" name="qq" value="4234324" class="ipt" data-reg="require" data-msg="请输入QQ">
+                    </div>
+                    <div class="btnbox">
+                        <!-- <a href="javascript:;" class="btn">修改</a> -->
+                        <button type="submit" class="btn">保存</button>
                     </div>
                 </form>
             </div>
@@ -99,6 +145,8 @@
         <p class="copyright">版权所有 Copyright 2012 中国扶贫基金会 保留所有权利</p>
     </div>
     <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/citys.js"></script>
+    <script src="../static/layui.all.js"></script>
 </body>
 
 </html>
