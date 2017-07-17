@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/layui.css">    
     <title>关于我们-下载中心</title>
 </head>
 
@@ -47,7 +48,7 @@
             <div class="m-download">
                 <h2 class="tit">下载中心</h2>
                 <div class="m-table">
-                    <table class="tbl">
+                    <table id="html-container" data-url="../mock/download.js" data-pages="7" class="tbl">
                         <tr>
                             <td>扶贫资料1</td>
                             <td>2017-05-06</td>
@@ -100,13 +101,13 @@
                         </tr>
                     </table>
                 </div>
-                <div class="m-pagenation">
-                    <span>当前第1页</span>
+                <div class="m-pagenation" id="J-pagenation">
+                    <!-- <span>当前第1页</span>
                     <span><a href="javascript:;">上一页</a></span>
                     <span><a href="javascript:;">下一页</a></span>
                     <span>共2页</span>
                     <span>前往 <input class="ipt" type="text" value=1>页</span>
-                    <a href="javascript:;" class="btn">确定</a>
+                    <a href="javascript:;" class="btn">确定</a> -->
                 </div>
             </div>
             </div>
@@ -122,6 +123,8 @@
         <p class="copyright">版权所有 Copyright 2012 中国扶贫基金会 保留所有权利</p>
     </div>
     <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/layui.all.js"></script>
+   
 </body>
 
 </html>

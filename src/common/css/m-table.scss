@@ -6,6 +6,9 @@
         tr {
             text-align: center;
             border-bottom: 1px solid #ccc;
+            &:first-child {
+                border-top: 1px solid #ccc;
+            }
         }
         tbody {
             tr:hover {
