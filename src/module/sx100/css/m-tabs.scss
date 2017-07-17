@@ -49,6 +49,13 @@
         table {
             width: 100%;
             text-align: center;
+            tr {
+                height: 30px;
+                line-height: 30px;
+            }
+            img {
+                vertical-align: middle;
+            }
         }
         .money {
             color: #f98700;
