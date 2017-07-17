@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/layui.css">
     <title>关于我们-我参与的</title>
 </head>
 
@@ -47,11 +48,11 @@
         </ul>
         <div class="container">
             <div class="m-tb">
-                <h2 class="tit">我参与的</h2>
-                <div class="m-tabs">
-                    <a href="javascript:;" class="btn fill">参与项目</a>
-                    <a href="javascript:;" class="btn">参与社团</a>
-                </div>
+                 <h2 class="tit">我参与的</h2>
+                 <div class="m-tabs">
+                     <a href="javascript:;" class="btn fill">参与项目</a> 
+                     <!-- <a href="javascript:;" class="btn">参与社团</a>  -->
+                </div>  
                 <div class="m-table">
                     <table class="tbl">
                         <thead>
@@ -62,7 +63,7 @@
                                 <th>捐赠金额</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="html-container" data-url="../mock/user_participant.js" data-pages="8">
                             <tr>
                                 <td>爱心一帮一</td>
                                 <td>北京交通大学</td>
@@ -84,13 +85,8 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="m-pagenation">
-                    <span>当前第1页</span>
-                    <span><a href="javascript:;">上一页</a></span>
-                    <span><a href="javascript:;">下一页</a></span>
-                    <span>共2页</span>
-                    <span>前往 <input class="ipt" type="text" value=1>页</span>
-                    <a href="javascript:;" class="btn">确定</a>
+                <div class="pagenation-wrapper">
+                    <div id="J-pagenation"></div>
                 </div>
             </div>
         </div>
@@ -106,6 +102,7 @@
         <p class="copyright">版权所有 Copyright 2012 中国扶贫基金会 保留所有权利</p>
     </div>
     <script src="../static/js/jquery.min.js"></script>
+   <script src="../static/layui.all.js"></script>
 </body>
 
 </html>

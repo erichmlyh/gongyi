@@ -17,3 +17,10 @@
         color: #fff;
     }
 }
+.pagenation-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
