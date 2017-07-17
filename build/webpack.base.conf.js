@@ -29,7 +29,8 @@ module.exports = {
       'components': path.resolve(__dirname, '../src/components'),
       'lib': path.resolve(__dirname, '../src/common/js/lib/'),
       'modules': path.resolve(__dirname, '../src/common/js/modules/'),
-      'css': path.resolve(__dirname, '../src/common/css/')
+      'css': path.resolve(__dirname, '../src/common/css/'),
+      'js': path.resolve(__dirname, '../src/common/js/')
     }
   },
   resolveLoader: {
