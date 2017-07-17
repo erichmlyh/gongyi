@@ -40,22 +40,21 @@ var option = {
     ]
 };
 chart.setOption(option);
+var $htmlContainer = $("#html-container");
+var url = $htmlContainer.data("url");
 chart.on('click', function (params) {
     var city = params.name;
-    console.log(city);
 
     $.ajax({
-        url: "../mock/partner.js",
+        url: url,
         type: "GET",
         dataType: "json",
+        data: {city: city},
         success: function(data){
-            console.log(data);
-            window.data = data;
             data = data && data.data || {};
             if (data.html) {
-                $(".J-partner").html(data.html);
+                $htmlContainer.html(data.html);
             }
-            console.log(data);
         },
         error: function() {
         }
