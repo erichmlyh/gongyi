@@ -3,8 +3,10 @@ import "css/basic.scss";
 import "./css/m-group.scss";
 
 layui.upload({
-  url: '/xxx/xx',
+  url: '../mock/upload',
+  title: '上传文件',
   success: function(res){
-    console.log(res); //上传成功返回值，必须为json格式
+    var data = res && res.data || {};
+    $("#upload-show").val(data.url);
   }
 });

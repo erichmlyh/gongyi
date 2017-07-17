@@ -1,8 +1,8 @@
 module.exports = function (query) {
     console.log(query);
     var data = {
-        html: 
-            ``
+        name: "文件名.jpg",
+        url: "http://www.baidu.com/xx.jpg"
     };
 
     return {
