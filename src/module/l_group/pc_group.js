@@ -5,12 +5,13 @@ import "./css/m-group.scss";
 import "js/pc_validate.js"
 
 // 上传文件
+var $uploadShow = $("#upload-show");
 layui.upload({
-  url: '../mock/upload',
+  url: $uploadShow.data("url"),
   title: '上传文件',
   success: function(res){
     var data = res && res.data || {};
-    $("#upload-show").val(data.url);
+    $uploadShow.val(data.url);
   }
 });
 

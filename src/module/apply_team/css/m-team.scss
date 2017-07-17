@@ -1,6 +1,12 @@
 .nav {
     opacity: 0.6;
 }
+.attachment {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+} 
 .card {
     width: 1120px;
     margin: 0 auto;
@@ -71,7 +77,7 @@
         font-size: 14px;
         color: #ccc;
         text-align: center;
-    }
+    }   
     .upload {
         position: relative;
         display: block;

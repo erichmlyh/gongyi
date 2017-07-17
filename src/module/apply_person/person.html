@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="widt·h=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/layui.css">
     <title>项目申请-伙伴社团详情</title>
 </head>
 
@@ -149,10 +150,15 @@
             </div>
             <div class="attachment card">
                 <p class="title">上传附件</p>
-                <p class="show">请上传盖章后的 JPG 或 PDF 文件</p>
-                <a href="javascript:;" class="upload">点击上传
-                    <input class="change" type="file" />
-                </a>
+                <input class="show" id="upload-show" data-url="../mock/upload" type="text" placeholder="请上传盖章后的 JPG 或 PDF 文件">
+                <input type="file" name="file" lay-type="file" class="btn change layui-upload-file">
+                
+                 <!-- <a href="javascript:;" class="upload">
+                    点击上传  -->
+                    <!-- <div id="upload" data-url="../mock/upload.js" class="change"></div> -->
+                    <!-- <input type="file" name="file" lay-type="file" class="btn change layui-upload-file"> -->
+                     <!-- <input id="upload" data-url="../mock/upload.js" class="change" type="file" />  -->
+                <!-- </a>  -->
             </div>
             <div class="submit card">
                  <button class="g-btn save" type="submit">保存并修改</button>
@@ -172,6 +178,7 @@
     </div>
     <script src="../static/js/jquery.min.js"></script>
     <script src="../static/js/echarts.min.js"></script>
+    <script src="../static/layui.all.js"></script>
 </body>
 
 </html>

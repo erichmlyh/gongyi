@@ -1,6 +1,12 @@
 .nav {
     opacity: 0.6;
 }
+.attachment {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+} 
 .card {
     width: 1120px;
     margin: 0 auto;
