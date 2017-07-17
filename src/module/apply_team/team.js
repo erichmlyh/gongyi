@@ -5,6 +5,9 @@ import "css/m-container.scss";
 import "./css/m-team.scss";
 import "./css/m-figuer.scss";
 
+import "js/pc_validate.js"
+
+
 // 上传文件
 var $uploadShow = $("#upload-show");
 layui.upload({
