@@ -13,19 +13,47 @@
             margin: 20px 0;
             text-align: left;
         }
+        .cx-rows {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            height: 30px;
+        }
         .col {
             display: inline-block;
-            margin-right: 20px;
             text-align: left;
+            input, select {
+                height: 30px;
+                line-height: 20px;
+                padding-left: 10px;
+                background-color: #fff;
+                border: 2px solid rgb(204, 204, 204);
+                border-radius: 3px;
+                appearance: none;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                outline: none;
+            }
+            select {
+                height: 30px;
+                width: 60px;
+            }
         }
         .btnbox {
             text-align: center;
         }
         .btn {
+            display: block;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
             padding: 2px 25px;
+            margin: 0 auto;
             border-radius: 3px;
             background-color: #f76d02;
             color: #fff;
+            text-align: center;
         }
         .ipt {
             width: 100px;

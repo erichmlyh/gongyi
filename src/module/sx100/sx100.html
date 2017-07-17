@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/layui.css">
     <title>善行100</title>
 </head>
 
@@ -75,32 +76,35 @@
             <div class="content">
                 <div class="m-score">
                     <p class="tit">成绩查询</p>
-                    <form class="form">
-                        <div class="rows">
+                    <div class="form" id="form">
+                        <div class="rows cx-rows">
                             <div class="col">
                                 <span>名称</span>
-                                <input class="ipt" type="text" name="title" placeholder="名称或团队">
+                                <input class="ipt J-name" type="text" name="title" placeholder="姓名或团队">
                             </div>
                             <div class="col">
                                 <span>类型</span>
-                                <select class="select" name="type">
+                                <select class="select J-type" name="type">
                                     <option value="个人">个人</option>
                                     <option value="团体">团体</option>
                                 </select>
                             </div>
                             <div class="col">
                                 <span>劝募日期</span>
-                                <input class="ipt" type="text" name="date" placeholder="日期">
+                                <div class="layui-inline">
+                                    <input class="ipt J-date layui-input" placeholder="请选择日期" onclick="layui.laydate({elem: this, festival: true})">
+                                </div>
+                                <!-- <input class="ipt" type="text" name="date" placeholder="日期"> -->
                             </div>
                         </div>
                         <div class="btnbox">
-                            <a href="javascript:;" class="btn">开始搜索</a>
+                            <a href="javascript:;" class="btn" id="to-search">开始搜索</a>
                         </div>
-                    </form>
+                    </div>
                     <div class="result">
                         <span class="title">查询结果</span>
                     </div>
-                    <table class="tbl">
+                    <table id="html-container" data-url="../mock/sx100.js" class="tbl">
                         <tr>
                             <th>名称</th>
                             <th>学校</th>
@@ -438,6 +442,7 @@
         <p class="copyright">版权所有 Copyright 2012 中国扶贫基金会 保留所有权利</p>
     </div>
     <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/layui.all.js"></script>
 </body>
 
 </html>
