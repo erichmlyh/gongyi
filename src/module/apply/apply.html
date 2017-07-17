@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/layui.css">
     <title>伙伴社团</title>
 </head>
 
@@ -48,9 +49,9 @@
         <div class="lst-container">
             <div class="name-wrapper">
                 <p class="left">最新项目</p>
-                <div class="right">当前第1页，上一页 下一页 共2页</div>
+                <div class="right" id="J-pagenation-new"></div>
             </div>
-            <ul class="lst">
+            <ul id="html-container-new" data-url="../mock/apply_new.js" data-pages="8" class="lst">
                 <li class="itm">
                     <img src="./images/balei.jpg" alt="">
                     <div class="ifo">
@@ -92,9 +93,9 @@
         <div class="lst-container">
             <div class="name-wrapper">
                 <p class="left">往期项目</p>
-                <div class="right">当前第1页，上一页 下一页 共2页</div>
+                <div class="right" id="J-pagenation-pass"></div>
             </div>
-            <ul class="lst">
+            <ul id="html-container-pass" data-url="../mock/apply_pass.js" data-pages="7" class="lst">
                 <li class="itm">
                     <img src="./images/balei.jpg" alt="">
                     <div class="ifo">
@@ -192,6 +193,7 @@
     <script src="../static/js/jquery.min.js"></script>
     <script src="../static/js/echarts.min.js"></script>
     <script src="../static/js/china.js"></script>
+    <script src="../static/layui.all.js"></script>
 </body>
 
 </html>
