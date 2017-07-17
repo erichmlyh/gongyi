@@ -2,6 +2,9 @@ import "css/reset.css";
 import "css/basic.scss";
 import "./css/m-signdetail.scss";
 
+import "js/pc_validate.js"
+
+
 // 渲染省份
 var provincesHtml = "";
 $.each(citys, function(idx, province) {

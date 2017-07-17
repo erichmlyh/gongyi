@@ -2,6 +2,8 @@ import "css/reset.css";
 import "css/basic.scss";
 import "./css/m-group.scss";
 
+import "js/pc_validate.js"
+
 // 上传文件
 layui.upload({
   url: '../mock/upload',

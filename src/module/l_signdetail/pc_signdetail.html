@@ -36,7 +36,7 @@
         </div>
     </div>
     <div class="m-signdetail">
-        <form class="form" method="post" action="/xx/xx">
+        <form class="form" action="#">
             <h2 class="tit">注册</h2>
             <div class="row">
                 <span class="label">省份：</span>
@@ -56,31 +56,37 @@
             </div>
             <div class="row">
                 <span class="label">姓名：</span>
-                <input type="text" class="ipt" placeholder="张十三" name="name"><span class="red">*</span>
+                <input type="text" class="ipt" placeholder="姓名" name="name" data-reg="require" data-msg="请输入姓名">
+                <span class="red">*</span>
             </div>
             <div class="row">
                 <span class="label">学校：</span>
-                <input type="text" class="ipt" placeholder="北京大学" name="school"><span class="red">*</span>
+                <input type="text" class="ipt" placeholder="学校" name="school" data-reg="require" data-msg="请输入学校">
+                <span class="red">*</span>
             </div>
             <div class="row">
                 <span class="label">年级：</span>
-                <input type="text" class="ipt" placeholder="张十三" name="grade"><span class="red">*</span>
+                <input type="text" class="ipt" placeholder="年级" name="grade" data-reg="require" data-msg="请输入年级">
+                <span class="red">*</span>
             </div>
             <div class="row">
                 <span class="label">专业：</span>
-                <input type="text" class="ipt" placeholder="工商管理" name="domain"><span class="red">*</span>
+                <input type="text" class="ipt" placeholder="专业" name="domain" data-reg="require" data-msg="请输入专业">
+                <span class="red">*</span>
             </div>
             <div class="row">
                 <span class="label">联系方式：</span>
-                <input type="text" class="ipt" placeholder="123123123" name="contact"><span class="red">*</span>
+                <input type="text" class="ipt" placeholder="联系方式" name="contact" data-reg="require" data-msg="请输入联系方式">
+                <span class="red">*</span>
             </div>
             <div class="row">
                 <span class="label">邮箱：</span>
-                <input type="text" class="ipt" placeholder="fasdfj@163.com" name="email"><span class="red">*</span>
+                <input type="text" class="ipt" placeholder="邮箱" name="email" data-reg="require" data-msg="请输入邮箱">
+                <span class="red">*</span>
             </div>
             <div class="row">
                 <span class="label">QQ：</span>
-                <input type="text" class="ipt" placeholder="4234255435" name="QQ">
+                <input type="text" class="ipt" placeholder="QQ" name="QQ">
             </div>
             <div class="btnbox">
                 <button type="submit" class="btn">保存并提交</buttpm>
