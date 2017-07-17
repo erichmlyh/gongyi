@@ -103,7 +103,7 @@ $("#to-search").on("click", function (e) {
         },
         error: function () {
         }
-    })
+    });
 
 });
 
