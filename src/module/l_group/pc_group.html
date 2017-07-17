@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>团队注册</title>
+    <link rel="stylesheet" href="../static/css/layui.css">
 </head>
 
 <body>
@@ -102,8 +103,10 @@
             </div>
             <div class="row">
                 <span class="label">上传附件：</span>
-                <input type="text" class="ipt" placeholder="请上传JPG或PDF附件" name="QQ">
-                <button type="submit" class="btn">上传附件</buttpm>
+                <!-- <input type="text" class="ipt" placeholder="请上传JPG或PDF附件" name="QQ"> -->
+                <!-- <button type="submit" class="btn">上传附件</buttpm> -->
+                <input type="file" name="file" class="layui-upload-file">
+
             </div>
             <div class="row">
                 <span class="label">&nbsp;</span>
@@ -125,6 +128,7 @@
         <p class="copyright">版权所有 Copyright 2012 中国扶贫基金会 保留所有权利</p>
     </div>
     <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/layui.all.js"></script>
 </body>
 
 </html>
