@@ -24,7 +24,7 @@ layui.use('upload', function () {
         });
     }
 });
-fileUpload();
+// fileUpload();
 
 $upload.on("change", function (e) {
 
