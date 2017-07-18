@@ -7,3 +7,8 @@ import "./css/w-baoming.scss";
 
 import "common/js/validate.js";
 
+new Kalendae.Input("muliti-date", {
+    months:1,
+    mode:'multiple',
+});
+

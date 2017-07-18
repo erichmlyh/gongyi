@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../static/css/kalendae.css">
     <title>公益未来-善行100</title>
     <script type="text/javascript">
         (function () {
@@ -57,8 +58,8 @@
              <div class="item">
                 <p class="left">预计服务时间</p>
                 <div class="fill">
-                    <input class="ipt" type="date" name="sj" placeholder="选择日期" data-reg="require" data-msg="请输入劝募日期">
-                    <img src="./images/date.png" alt="">
+                    <input id="muliti-date" class="ipt" type="text" name="sj" placeholder="选择日期" data-reg="require" data-msg="请输入劝募日期">
+                    <!-- <img src="./images/date.png" alt=""> -->
                 </div>
             </div>
             <div class="item">
@@ -70,13 +71,21 @@
             <div class="item">
                 <p class="left">是否当小组长</p>
                 <div class="fill">
-                    <input class="ipt" type="text" name="zz" placeholder="是／否" data-reg="require" data-msg="请输入是否当小组长">
+                    <select class="sel g-select province" name="zz">
+                        <option value="是" data-idx="0">是</option>
+                        <option value="否" data-idx="0">否</option>
+                    </select>
+                    <!-- <input class="ipt" type="text" name="zz" placeholder="是／否" data-reg="require" data-msg="请输入是否当小组长"> -->
                 </div>
             </div>
             <div class="item">
                 <p class="left">是否参加过</p>
                 <div class="fill">
-                    <input class="ipt" type="text" name="in" placeholder="参加过的角色" data-reg="require" data-msg="请输入是否参加过">
+                    <select class="sel g-select province" name="in">
+                        <option value="是" data-idx="0">是</option>
+                        <option value="否" data-idx="0">否</option>
+                    </select>
+                    <!-- <input class="ipt" type="text" name="in" placeholder="参加过的角色" data-reg="require" data-msg="请输入是否参加过"> -->
                 </div>
             </div>
             <div class="item">
@@ -97,5 +106,6 @@
         </form>
     </section>
     <script src="../static/js/zepto.js"></script>
+    <script src="../static/js/kalendae.standalone.js"></script>
 </body>
 </html>
