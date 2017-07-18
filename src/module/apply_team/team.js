@@ -5,7 +5,7 @@ import "css/m-container.scss";
 import "./css/m-team.scss";
 import "./css/m-figuer.scss";
 
-import "./js/validate.js"
+import "js/dvalidate.js"
 
 
 // 上传文件
