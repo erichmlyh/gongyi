@@ -1,0 +1,43 @@
+.btn {
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+}
+.sel {
+    margin-right: 10px;
+    padding-left: 10px;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+    width: 230px;
+    background-color: #fff;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+}
+.row {
+    .label {
+        width: 440px;
+    }
+    .download {
+        font-size: 12px;
+        color: #278bcc;
+        text-decoration: underline;
+    }
+}
+.m-forme {
+    .btnbox {
+        text-align: center;
+        border-top: none;
+    }
+}
+ 
