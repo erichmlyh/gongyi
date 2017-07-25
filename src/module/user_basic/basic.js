@@ -45,3 +45,15 @@ function renderCity(index) {
     });
     $(".city").html(citysHtml);
 }
+
+// 上传文件
+var $uploadShow = $("#upload-show");
+layui.upload({
+  url: $uploadShow.data("url"),
+  title: '上传图片',
+  success: function(res){
+    var data = res && res.data || {};
+    $uploadShow.attr("src", data.url);
+    $("#upload-show-up").val(data.url);
+  }
+});

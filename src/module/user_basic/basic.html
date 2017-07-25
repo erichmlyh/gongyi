@@ -50,10 +50,10 @@
             <div id="info-disable" class="m-tb">
                 <h2 class="tit">基本信息</h2>
                 <div class="m-forme">
-                    <!-- <div class="row">
+                     <div class="row">
                         <span class="label">头像</span>
-                        <img src="" alt="">
-                    </div> -->
+                        <img src="https://himg.bdimg.com/sys/portrait/item/xxx" width="100" height="100" alt="">
+                    </div> 
                     <div class="row">
                         <span class="label">省份</span>
                         <span>河北省</span>
@@ -95,6 +95,16 @@
             <div id="info-edit" class="m-tb edit">
                 <h2 class="tit">基本信息</h2>
                 <form class="m-forme" action="#">
+                    <div class="row">
+                        <span class="label">头像</span>
+                        <input type="text" name="touxiang" value="" class="ipt hide" id="upload-show-up">
+                        <div class="site-demo-upload ib" >
+                            <img id="upload-show" data-url="../mock/upload" src="https://himg.bdimg.com/sys/portrait/item/xxx" width="100" height="100" >
+                            <div class="site-demo-upbar">
+                                <input type="file" name="file" class="layui-upload-file" id="test">
+                            </div>
+                        </div>
+                    </div> 
                     <div class="row">
                         <span class="label">省份</span>
                         <select data-value="河北省" class="sel g-select province" name="sf" data-reg="require" data-msg="请输入省份">
