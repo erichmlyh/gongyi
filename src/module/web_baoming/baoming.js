@@ -10,5 +10,6 @@ import "common/js/validate.js";
 new Kalendae.Input("muliti-date", {
     months:1,
     mode:'multiple',
+    format: 'YYYY-MM-DD'
 });
 
