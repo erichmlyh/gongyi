@@ -56,3 +56,13 @@ layui.upload({
     $uploadShow.val(data.url);
   }
 });
+
+// 是否能修改
+var edit = $("body").data("edit");
+if (edit == "no") {
+    $(".btnbox").hide();
+    layer.open({
+        title: 'tips:',
+        content: $("body").data("content") || "审核中,请稍等..."
+    }); 
+}
