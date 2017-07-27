@@ -72,4 +72,28 @@ $(".m-ads").find(".tabs").on("click", ".tit", function(e){
     $("." + me).show();
 });
 
+// header导航显示效果
+var fixed = false;
+window.onscroll = function() {
+     var height = document.documentElement.scrollTop || document.body.scrollTop; 
+     console.log("old height", height);
+
+     if(height >= 110 && !fixed) {
+         $('#j-header').fadeOut('fast', function() {
+             $('#j-header-eff').fadeIn('fast', function() {
+                 document.body.scrollTop = height;
+                 fixed = true;
+             });
+         });
+     }
+     
+     if(height <= 110 && fixed == true){
+         $('#j-header').fadeIn('fast', function() {
+             $('#j-header-eff').fadeOut('fast', function() {
+                 document.body.scrollTop = height;
+                 fixed = false;
+             });
+         });
+     }
+}
 

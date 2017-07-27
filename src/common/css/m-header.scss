@@ -1,10 +1,12 @@
 .m-header {
+    background-color: #eee;
     .top {
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
         width: 1120px;
         height: 30px;
+        background-color: #eee;
         line-height: 30px;
         font-size: 14px;
         color: #333;
@@ -60,5 +62,14 @@
                 }
             }
         }
+    }
+}
+.header-eff {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    .bottom {
+        box-shadow: 1px 1px 6px #666;
     }
 }
