@@ -1,6 +1,6 @@
 .m-sign {
     position: relative;
-    margin-top: -20px;
+    /* margin-top: -20px; */
     font-size: 0;
     .bgimage {
         width: 100%;
@@ -33,7 +33,7 @@
         .ipt {
             display: inline-block;
             box-sizing: border-box;
-            padding-left: 0 10px;
+            padding-left: 10px;
             width: 200px;
             height: 40px;
             border-radius: 5px;
