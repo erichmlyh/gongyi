@@ -17,7 +17,12 @@ layer.open({
         var btn = layero.find('.layui-layer-btn');
         btn.css('text-align', 'center');
         btn.find('.layui-layer-btn0').on("click", function(){
-            history.go(-1);
+            var url = $("body").data("href");
+            if (url) {
+                location.replace(url);
+            } else {
+                history.go(-1);
+            }
         });
         // btn.find('.layui-layer-btn0').attr({
         //     href: 'http://www.layui.com/'
