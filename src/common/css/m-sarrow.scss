@@ -1,0 +1,20 @@
+.m-sarrow {
+    .swiper-button-prev {
+        width:17px;
+        height: 25px;
+        background-size: 17px 25px;
+        background-image: url(../images/prev.png);
+    }
+    .swiper-button-next {
+        width:17px;
+        height: 25px;
+        background-size: 17px 25px;
+        background-image: url(../images/next.png);
+    }
+    .swiper-button-prev.swiper-button-disabled {
+        background-image: url(../images/prev_hover.png);
+    }
+    .swiper-button-next.swiper-button-disabled {
+        background-image: url(../images/next_hover.png);
+    }
+}
