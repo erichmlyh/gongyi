@@ -68,4 +68,7 @@
         display: block;
         height: 70/$tr;
     }
+    select, input {
+        padding-left: 20/$tr;
+    }
 }
