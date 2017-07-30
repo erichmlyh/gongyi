@@ -1,3 +1,5 @@
+@import "../../../static/css/layui.css";
+
 .m-header {
     background-color: #eee;
     .top {
@@ -36,9 +38,12 @@
             cursor: hand;
         }
         .logo {
+            display: inline-block;
+            vertical-align: bottom;
             margin-top: 15px;
         }
         .logotit {
+            display: inline-block;
             margin: 0 0 10px 20px;
             vertical-align: bottom;
         }

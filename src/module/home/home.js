@@ -8,6 +8,8 @@ import "./css/m-ads.scss";
 
 import "./css/m-banner.scss";
 
+var clientWidth = document.documentElement.clientWidth || window.innerWidth;
+$(".J-banner").height(clientWidth/3.4285714286);
 // 头图轮播
 new Swiper('.J-banner', {
     // pagination: '.swiper-pagination',
