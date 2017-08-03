@@ -77,6 +77,17 @@ $(".m-ads").find(".tabs").on("click", ".tit", function(e){
     $("." + me).show();
 });
 
+$(".m-intro").find(".num").each(function(idx, ele){
+    goNum(ele);
+});
+// 文字跳动
+function goNum(ele){
+    var numAnim = new CountUp(ele, 0, $(ele).data("endval")||0);
+    numAnim.start();
+}
+
+
+
 // header导航显示效果
 // var fixed = false;
 // window.onscroll = function() {
