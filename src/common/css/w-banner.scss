@@ -28,6 +28,8 @@
             display: block;
             width: 240/$tr;
             height: 240/$tr;
+            border-radius: 50%;
+            border: 10/$tr solid #aaa;
         }
         .name {
             color: #fff;
