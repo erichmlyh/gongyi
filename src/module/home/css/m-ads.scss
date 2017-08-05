@@ -1,4 +1,5 @@
 .m-ads {
+    position: relative;
     background-color: #fff;
     padding-bottom: 50px;
     .tabs {
@@ -33,12 +34,27 @@
     .ads-container {
         margin: 0 auto;
         width: 1000px;
+        overflow: hidden;
         .swiper-button-prev  {
             margin-top: -34px;
         }
         .swiper-button-next {
             margin-top: -34px;
         }
+    }
+    .swiper-container {
+        position: relative;
+        .swiper-button-prev  {
+            margin-top: -34px;
+            transform: translateX(-550px);
+            left: 50%;
+        }
+        .swiper-button-next {
+            margin-top: -34px;
+            transform: translateX(550px);
+            right: 50%;
+        }
+        
     }
     .ads {
         .img {

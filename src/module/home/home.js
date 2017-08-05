@@ -39,10 +39,10 @@ new Swiper('.J-news', {
 });
 
 // 合作企业，爱心媒体，爱心大使
-[".J-hzqy", ".J-axmt", ".J-axds"].forEach(function(className){
-    new Swiper(className, {
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
+["hzqy", "axmt", "axds"].forEach(function(className){
+    new Swiper(".J-ads-" + className, {
+        nextButton: '.swiper-button-next-' + className,
+        prevButton: '.swiper-button-prev-' + className,
         slidesPerView: 5,
         // centeredSlides: true,
         paginationClickable: true,
@@ -82,7 +82,7 @@ $(".m-intro").find(".num").each(function(idx, ele){
 });
 // 文字跳动
 function goNum(ele){
-    var numAnim = new CountUp(ele, 0, $(ele).data("endval")||0);
+    var numAnim = new CountUp(ele, 0, $(ele).text());
     numAnim.start();
 }
 

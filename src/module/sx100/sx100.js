@@ -107,3 +107,12 @@ $("#to-search").on("click", function (e) {
 
 });
 
+$(".m-intro").find(".num").each(function(idx, ele){
+    goNum(ele);
+});
+// 文字跳动
+function goNum(ele){
+    var numAnim = new CountUp(ele, 0, $(ele).text());
+    numAnim.start();
+}
+
