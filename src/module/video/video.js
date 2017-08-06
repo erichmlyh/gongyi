@@ -4,6 +4,7 @@ import "css/m-form.scss";
 import "css/m-table.scss";
 import "css/m-tb.scss";
 
+import "css/m-sarrow.scss";
 import "./css/m-video.scss";
 
 // 优酷播放器
