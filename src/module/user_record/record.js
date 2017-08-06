@@ -30,3 +30,14 @@ layui.use('laydate', function () {
         }
     };
 });
+
+// 上传文件
+var $uploadShow = $("#upload-show");
+layui.upload({
+  url: $uploadShow.data("url"),
+  title: '上传图片',
+  success: function(res){
+    var data = res && res.data || {};
+    $uploadShow.val(data.url);
+  }
+});

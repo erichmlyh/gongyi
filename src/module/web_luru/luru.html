@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="../static/css/layui.css">
     <title>公益未来-善行100</title>
     <script type="text/javascript">
         (function () {
@@ -105,10 +106,17 @@
                     <img src="./images/yuan.png" alt="">
                 </div>
             </div>
-            <div class="item">
+            <!-- <div class="item">
                 <p class="left">捐赠登录单</p>
                 <div class="fill">
                     <input class="ipt" type="text" name="dld" data-reg="require" data-msg="请输入捐赠登录单">
+                </div>
+            </div> -->
+            <div class="item">
+                <span class="left label">捐赠登录单</span>
+                <div class="fill">
+                    <input class="ipt" id="upload-show" data-url="../mock/upload" type="text" class="ipt" placeholder="请上传图片" name="file" data-reg="require" data-msg="请输入捐赠登录单" disabled="disabled"> 
+                    <input type="file" name="file" class="btn layui-upload-file">
                 </div>
             </div>
             <div class="item">
@@ -121,5 +129,6 @@
         </form>
     </section>
     <script src="../static/js/zepto.js"></script>
+    <script src="../static/layui.all.js"></script>
 </body>
 </html>

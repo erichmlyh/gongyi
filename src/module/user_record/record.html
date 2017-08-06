@@ -87,9 +87,14 @@
                         <span class="label">订单总金额</span>
                         <input type="text" class="ipt" data-reg="require" data-msg="请输入订单总金额">
                     </div>
-                    <div class="row">
+                    <!-- <div class="row">
                         <span class="label">捐赠登录单</span>
                         <input type="text" class="ipt" data-reg="require" data-msg="请输入捐赠登录单">
+                    </div> -->
+                    <div class="row">
+                        <span class="label">捐赠登录单</span>
+                        <input id="upload-show" data-url="../mock/upload" type="text" class="ipt" placeholder="请上传图片" name="file" data-reg="require" data-msg="请输入捐赠登录单" disabled="disabled"> 
+                        <input type="file" name="file" class="btn layui-upload-file">
                     </div>
                     <div class="btnbox">
                         <!-- <a href="javascript:;" class="btncancel">取消</a> -->
