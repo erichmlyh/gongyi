@@ -27,13 +27,35 @@
     }
     .intro {
         margin-top: 70/$tr;
+        .title {
+            padding: 0 110/$tr;
+            margin: 30/$tr auto 10/$tr auto;
+            font-size: 36/$tr;
+            color: rgb(51, 51, 51);
+            line-height: 1.7;
+            word-spacing: 10/$tr;
+            font-weight: bold;
+            
+            &:first-child {
+                margin-top: 0;
+            }
+        }
         .content{
             padding: 0 110/$tr;
+            margin-bottom: 6/$tr;
             font-size: 36/$tr;
             color: rgb(51, 51, 51);
             line-height: 1.7;
             word-spacing: 10/$tr;
             text-indent: 72/$tr;
+        }
+        img {
+            display: block;
+            width: 860/$tr;
+            margin: 30/$tr auto;
+        }
+        strong {
+            font-weight: bold;
         }
     }
     .hide {
