@@ -1,6 +1,7 @@
 @import "../../../common/css/w-common.scss";
 
 .page {
+    padding-bottom: 50/$tr;
     .title {
         display: flex;
         flex-flow: row nowrap;

@@ -43,11 +43,25 @@ import "./css/w-rank.scss";
 $(".each-rank").on("click", function(){
     var $this = $(this);
     var url = $this.data("url");
+    var isPerson = !($this[0].className.indexOf("person") == -1),
+        isWeek = !($this[0].className.indexOf("week") == -1);
     $.ajax({
         url: url,
         type: "GET",
         dataType: "json",
         success: function(data){
+            console.log("isPerson",isPerson)
+            console.log("isWeek",isWeek)
+            // 处理抬头
+            var text = isWeek ? "周" : "&nbsp;&nbsp;&nbsp;";
+            $("#week-or-not").html(text);
+
+            if(isPerson) {
+                $("#name").show()
+            } else {
+                $("#name").hide()
+            }
+
             data = data && data.data || [];
             // data = mockData.data
             var html = "";
@@ -55,7 +69,7 @@ $(".each-rank").on("click", function(){
                 html += '<tr class="body-row">'
                         + '<td class="rank"></td> '
                         + '<td>' + row.school + '</td> '
-                        + '<td>' + row.name + '</td> '
+                        + (isPerson ? ('<td>' + row.name + '</td> ') : "")
                         + '<td>' + row.time + '</td> '
                         + '<td>' + row.score + '</td> '
                         + '</tr>';
