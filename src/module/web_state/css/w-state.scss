@@ -1,8 +1,10 @@
 @import "../../../common/css/w-common.scss";
 
-.page {
+.m-state {
     padding: 50/$tr 100/$tr;
     font-size: 36/$tr;
+    line-height: 1.7;
+    text-align: justify;
     h2 {
         font-size: 48/$tr;
         font-weight: bold;
