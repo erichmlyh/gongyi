@@ -1,7 +1,7 @@
 @import "../../../common/css/w-common.scss";
 
 .m-state {
-    padding: 50/$tr 100/$tr;
+    padding: 100/$tr;
     font-size: 36/$tr;
     line-height: 1.7;
     text-align: justify;
@@ -14,6 +14,9 @@
     }
     em {
         font-weight: bold;
+    }
+    .para {
+        margin-bottom: 50/$tr;
     }
     .red {
         color: red;
