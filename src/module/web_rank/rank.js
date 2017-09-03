@@ -57,19 +57,20 @@ $(".each-rank").on("click", function(){
             $("#week-or-not").html(text);
 
             if(isPerson) {
-                $("#name").show()
+                $("#name").text("姓名")
             } else {
-                $("#name").hide()
+                $("#name").text("社团名称")
             }
 
             data = data && data.data || [];
             // data = mockData.data
             var html = "";
-            data.forEach(function(row){
+            data.forEach(function(row, idx){
                 html += '<tr class="body-row">'
-                        + '<td class="rank"></td> '
+                        + '<td class="rank">' + ((idx>2)?idx+1:"") + '</td> '
                         + '<td>' + row.school + '</td> '
-                        + (isPerson ? ('<td>' + row.name + '</td> ') : "")
+                        // + (isPerson ? ('<td>' + row.name + '</td> ') : "")
+                        + '<td>' + row.name + '</td> '
                         + '<td>' + row.time + '</td> '
                         + '<td>' + row.score + '</td> '
                         + '</tr>';

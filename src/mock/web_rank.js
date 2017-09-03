@@ -12,6 +12,18 @@ module.exports = function (query) {
             time: "100",
             score: "1000"
         },
+        {
+            school: "北京理工大学",
+            name: "张三",
+            time: "100",
+            score: "1000"
+        },
+        {
+            school: "北京理工大学",
+            name: "张三",
+            time: "100",
+            score: "1000"
+        },
     ];
 
     return {
