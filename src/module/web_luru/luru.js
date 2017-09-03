@@ -14,12 +14,14 @@ $(".nums").on("change", function(e){
   var wennuanVal = $(".wennuan").val();
   // 检查美术包是否是0.5的整数倍
   if ($(this).hasClass("meishu") && !/^\d*(\.(5|0))?$/.test(meishuVal)) {
-    alert($(".meishu").data("msg"))
+    $(".meishu").val("")
+    alert("请输入0或者0.5的整数倍");
     return;
   }
   // 检查温暖包是否是0.5的整数倍
   if ($(this).hasClass("wennuan") && !/^\d*(\.(5|0))?$/.test(wennuanVal)) {
-    alert($(".wennuan").data("msg"))
+    $(".wennuan").val("")
+    alert("请输入0或者0.5的整数倍");
     return;
   }
   val = parseInt(100 * meishuVal) + parseInt(200 * wennuanVal);
