@@ -71,4 +71,12 @@
     select, input {
         padding-left: 20/$tr;
     }
+    .btns {
+        transform: translateX(-50/$tr);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 750/$tr;
+    }
 }
