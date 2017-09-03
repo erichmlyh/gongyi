@@ -60,13 +60,13 @@
             <div class="item">
                 <p class="left">美术包（数量）</p>
                 <div class="fill">
-                    <input class="ipt" type="text" name="ms" data-reg="require" data-msg="请输入美术包数量">
+                    <input class="ipt nums meishu" type="text" name="ms" data-reg="halfNum" data-msg="请输入正确的美术包数量">
                 </div>
             </div>
             <div class="item">
                 <p class="left">温暖包（数量）</p>
                 <div class="fill">
-                    <input class="ipt" type="text" name="wn" data-reg="require" data-msg="请输入温暖数量">
+                    <input class="ipt nums wennuan" type="text" name="wn" data-reg="halfNum" data-msg="请输入正确的温暖数量">
                 </div>
             </div>
             <div class="item">
@@ -89,7 +89,7 @@
             <div class="item">
                 <p class="left">劝募总金额</p>
                 <div class="fill">
-                    <input class="ipt" type="number" name="je" data-reg="require" data-msg="请输入劝募总金额">
+                    <input class="ipt total-cash" type="number" name="je" value="" readonly disabled="true">
                     <img src="./images/yuan.png" alt="">
                 </div>
             </div>
@@ -122,7 +122,7 @@
             <div class="item">
                 <p class="left">服务时长</p>
                 <div class="fill">
-                    <input class="ipt" type="text" name="dld" data-reg="require" placeholder="单位：小时" data-msg="请输入捐赠登录单">
+                    <input class="ipt" type="text" name="dld" data-reg="require" value="8小时" readonly disabled="true" placeholder="单位：小时" data-msg="请输入捐赠登录单">
                 </div>
             </div>
             <button class="g-btn create" type="submit">录入</button>

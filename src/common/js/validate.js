@@ -26,6 +26,9 @@
         },
         phone: function(val) {
             return /^1[0-9]{10}$/.test(val);
+        },
+        halfNum: function(val) {
+            return /^\d*(\.(5|0))?$/.test(val);
         }
     }
     $form.on("submit", function(e) {

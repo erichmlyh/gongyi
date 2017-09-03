@@ -106,10 +106,16 @@
         .lst {
             .itm {
                 display: flex;
-                justify-content: space-between;
+                justify-content: flex-start;
                 margin-bottom: 15px;
+                img {
+                    width: 140px;
+                    height: 105px;
+                }
             }
             .ifo {
+                flex: 0 0 auto;
+                width: 245px;
                 margin-left: 10px;
                 .tit {
                     margin-bottom: 15px;

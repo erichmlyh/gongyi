@@ -56,7 +56,7 @@ $(".m-proboard").find(".tabs").on("click", ".tit", function(e){
     var $this = $(this);
     var me = $this.data("me");
     var all = $this.data("all");
-
+    
     $(".m-proboard").find(".J-tit").removeClass("cur");
     $this.addClass("cur");
     $("." + all).hide();
@@ -70,10 +70,11 @@ $(".m-ads").find(".tabs").on("click", ".tit", function(e){
     var $this = $(this);
     var me = $this.data("me");
     var all = $this.data("all");
-
+    
     $(".m-ads").find(".J-ads-tab").removeClass("cur");
     $this.addClass("cur");
-    $("." + all).hide();
+    // $("." + all).hide();
+    $(".m-ads").find("." + all).hide();
     $("." + me).show();
 });
 
