@@ -43,13 +43,13 @@ chart.setOption(option);
 var $htmlContainer = $("#html-container");
 var url = $htmlContainer.data("url");
 chart.on('click', function (params) {
-    var city = params.name;
+    var province = params.name;
 
     $.ajax({
         url: url,
         type: "GET",
         dataType: "json",
-        data: {city: city},
+        data: {province: province},
         success: function(data){
             data = data && data.data || {};
             if (data.html) {

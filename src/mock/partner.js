@@ -1,7 +1,7 @@
 module.exports = function (query) {
     var data = {
         html: 
-            `<p class="tit">${query.city}</p>
+            `<p class="tit">${query.province}</p>
             <div class="ifo">
                 <span>社团</span>
                 <span>学校</span>
